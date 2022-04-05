@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+
+:root {
+    --roboto: 'Roboto', sans-serif;
+    --rojo: #D32531;
+    --negro: #1B1B1B;
+    --crema: #FBF5EB;
+    --light: 300;
+    --medium: 500;
+}
+
+html {
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FBF5EB;
+}
+
+h1, h3, h4, h5, p {
+    color: var(--negro);
+    padding: 0;
+    margin: 0;
+}
+
+/*---- Menu compacto ----*/
+
+.mostar {
+    display: block;
+}
+
+.ocultar {
+    display: none;
+}
+
+.barraMenu__menu h3{
+  color: var(--crema);
+}
+
+.reproductor__musica__lista__comprimido h3{
+  color: var(--crema);
+}
+
+.reproductor__musica__lista__desplegado h3{
+  color: var(--crema);
+}
+
+.reproductor__musica__album h3{
+  color: var(--crema);
+}
+
+.reproductor__musica__artista h3{
+  color: var(--crema);
+}
+
+/* Imagen Inicial */
+.portada {
+    background-color: var(--negro);
+    width: 100%;
+}
+
+    .portada img {
+        /*
+        background-image: url('../img/nota-larga/portada.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        */
+        margin-top: 2rem;
+        margin-bottom: 8rem;
+        width: 100%;
+    }
+
+
+
+/* Nota */
+.nota {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: -23rem;
+}
+
+.nota__linea-lateral {
+    margin: 30.5rem 0rem 0rem 1.1rem;
+    background-color: var(--negro);
+    width: 1.5rem;
+    height: auto;
+}
+
+    .nota__linea-lateral:first-child {
+        margin: 36.5rem 0rem 6rem 14.5%;
+        background-color: var(--rojo);
+        width: 0.4rem;
+    }
+
+/* Autor */
+.nota__linea-lateral-autor{
+  margin: 34rem 0rem 0rem 0rem;
+  background-color: var(--negro);
+  width: 0.2rem;
+  height: 30.3rem;
+}
+
+.nota__autor{
+  margin-left: 3.4rem;
+}
+
+.nota__imagen-lateral-autor{
+  margin: 36rem auto 0rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10.3rem;
+  width: 10.3rem;
+  background-color: none;
+  border: 2px solid var(--rojo);
+  border-radius: 50%;
+}
+
+    .nota__imagen-lateral-autor img{
+      height: 8.6rem;
+      width: 8.6rem;
+    }
+
+.nota__autor h2{
+  margin: 1rem auto 0rem auto;
+  display: flex;
+  text-align: left;
+
+  font-family: var(--roboto);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+    #linea-roja-autor{
+      width: 2.8rem;
+      height: 0.2rem;
+    }
+
+    #compartir-redes-sociales{
+      width: 9.5rem;
+      height: 6.4rem;
+      margin-top: 2rem;
+
+      cursor: pointer;
+    }
+
+/* Cuerpo de la nota */
+.nota__texto-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
+
+    .nota__texto-container h4 {
+        font-size: 1.6rem;
+        font-weight: 900;
+        color: var(--crema);
+        margin: 0;
+    }
+
+
+.nota__texto {
+    margin-top: 2rem;
+    padding: 5.75% 8% 6rem 8%;
+    background-color: var(--crema);
+    font-family: var(--roboto);
+    width: 86.8rem;
+    height: auto;
+}
+
+    .nota__texto h1 {
+        margin: 6rem 0rem 4rem 0rem;
+        font-size: 3.6rem;
+        font-weight: bold;
+        text-align: center;
+        line-height: 4rem;
+    }
+
+    .nota__texto p {
+        margin: 2rem 0rem 2rem 0rem;
+        font-size: 1.8rem;
+        font-weight: var(--light);
+        line-height: 3rem;
+    }
+
+.primer-parrafo p {
+    margin-top: 1.5rem;
+}
+
+.nota__texto-foto img {
+    margin: 2rem 0rem 2rem -3rem;
+    width: 75rem;
+}
+
+
+.nota__texto__encabezado {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+}
+
+    .nota__texto__encabezado h5 {
+        margin-top: 0.4rem;
+        font-size: 1.8rem;
+        font-weight: var(--medium);
+    }
+
+    .nota__texto__encabezado img {
+        width: 6.6rem;
+        height: 0.2rem;
+    }
+
+
+.nota__texto__video {
+    margin: 4rem 0rem 4rem 0rem;
+}
+
+
+.nota__texto__cita {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0rem 3rem 0rem;
+    padding: 0rem 5rem 0rem 5rem;
+}
+
+.nota__texto__cita-texto {
+    width: 56rem;
+    align-self: center;
+}
+
+    .nota__texto__cita-texto h3 {
+        margin: 2.5rem 0rem 2.5rem 0rem;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 2.6rem;
+        line-height: 3.2rem;
+    }
+
+.nota__texto__cita-linea-1 {
+    align-self: start;
+}
+
+    .nota__texto__cita-linea-1 img {
+        width: 14.8rem;
+    }
+
+.nota__texto__cita-linea-2 {
+    align-self: flex-end;
+}
+
+    .nota__texto__cita-linea-2 img {
+        width: 25.8rem;
+    }

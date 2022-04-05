@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700;900&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --roboto: 'Roboto', sans-serif;
+  --rojo: #D32531;
+  --negro: #1B1B1B;
+  --crema: #FBF5EB;
+  --crema-oscuro: #F6EEE0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--crema);
+}
+
+p, h3, h4, h5 {
+  font-style: var(--roboto);
+}
+
+/*  Utilidades */
+.mostar {
+    display: block;
+}
+
+.ocultar {
+    display: none;
+}
+
+
+/* -------------------------------- Portada -------------------------------- */
+.fondo-negro {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--negro);
+  padding: 2rem 0rem 0rem 0rem;
+  width: 100%;
+  height: auto;
+}
+
+.fondo-negro h5 {
+  margin: 1rem 0rem 4rem 16.8rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--crema);
+}
+
+.fondo-rojo {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../img/nota-corta/fondo-rojo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 3rem;
+  padding-top: 4rem;
+  width: 91%;
+  height: auto;
+}
+
+.fondo-rojo h4 {
+  margin: 0rem 0rem 2rem 13.8rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--crema);
+}
+
+
+.portada {
+  display: flex;
+  flex-direction: row;
+  color: var(--crema);
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.portada img {
+  margin-left: 13.8rem;
+  width: 56.72%;
+}
+
+.titulo-autor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 7.4rem 0rem 0rem 4rem;
+  height: 27.4rem;
+}
+
+.titulo-autor h1 {
+  margin: 0;
+  width: 34rem;
+  font-weight: bold;
+  font-size: 3.6rem;
+}
+
+.titulo-autor img {
+  margin: 0rem 0rem 0.5rem 0rem;
+  width: 7rem;
+  height: 0.2rem;
+}
+
+.titulo-autor h3 {
+  margin: 0rem 0rem 4rem 0rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 1350px) {
+  .fondo-negro h1 {
+    font-size: 3.2rem;
+  }
+  .fondo-negro h3 {
+    font-size: 1.4rem;
+  }
+  .titulo-autor {
+    margin: 6rem 0rem 0rem 4rem;
+    height: 24.4rem;
+  }
+}
+
+/* -------------------------------- Más del autor -------------------------------- */
+.fondo-negro-trending{
+  width: auto;
+  height: 8rem;
+  background-color: var(--negro);
+  margin-left: 95rem;
+}
+
+.seccion-1__trending{
+  position: absolute;
+  left: 95rem;
+}
+
+.seccion-1__trending h2 {
+    max-width: auto;
+    font-style: var(--fuenteSecundaria);
+    font-size: 4.2rem;
+    font-weight: bold;
+    line-height: 3.5rem;
+    color: var(--crema);
+    margin-bottom: 2rem;
+    padding-left: 4rem;
+}
+
+.seccion-1__trending img {
+    width: 10.5rem;
+    height: auto;
+    margin-left: 4rem;
+}
+
+.seccion-1__trending__grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25% 75%;
+    margin-left: 4rem;
+    padding: 2rem 0rem 1rem 0rem;
+    background-color: var(--crema);
+    max-width: 30rem;
+    height: auto;
+}
+
+    .seccion-1__trending__grid h4 {
+        font-style: var(--fuenteNumeros);
+        font-size: 3.6rem;
+        font-weight: 800;
+        color: var(--rojo);
+        text-align: center;
+        line-height: 4rem;
+    }
+
+    .seccion-1__trending__grid p {
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 2rem;
+        color: var(--negro);
+        padding-right: 2.5rem;
+    }
+
+    .seccion-1__trending__grid div {
+        margin-bottom: 1rem;
+    }
+
+/* -------------------------------- Cuerpo de la nota -------------------------------- */
+.cuerpo-nota{
+  display: flex;
+  flex-direction: column;
+}
+
+.fecha-redes-sociales {
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  margin: -5rem 0 0 17rem;
+  width: auto;
+  position: relative;
+}
+
+.img-redes-sociales {
+  width: 13rem;
+  height: 2.5rem;
+  margin-top: 2rem;
+  margin-left: 40rem;
+}
+
+.linea-fecha {
+  width: 7rem;
+  height: 2px;
+}
+
+.nota {
+  font-family: var(--roboto);
+  margin: 0 0 0 17rem;
+  width: 75rem;
+}
+
+.linea-subtitulo {
+  width: 6rem;
+  height: 1rem;
+  margin-bottom: -4rem;
+}
+
+.nota h4{
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 4rem;
+  line-height: 3rem;
+}
+
+.nota p{
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 2rem;
+  line-height: 3rem;
+}

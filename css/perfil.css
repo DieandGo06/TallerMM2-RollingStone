@@ -1,0 +1,303 @@
+:root {
+    --roboto: 'Roboto', sans-serif;
+    --rubik: 'Rubik', sans-serif;
+    --rojo: #d32531;
+    --negro: #1b1b1b;
+    --crema: #fbf5eb;
+    --crema: #fbf5eb;
+    --medium: 500;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.main {
+    display: flex;
+    margin-top: 6rem;
+}
+
+.contenedor {
+    width: 64.5%;
+    height: auto;
+    max-width: 93rem;
+    margin: 0 auto;
+    padding-top: 8rem;
+    /*background-color: aqua;*/
+}
+
+
+
+/* --------------- Barra Lateral --------------- */
+.lateral {
+    width: 26rem;
+    padding: 4rem;
+    background-color: var(--rojo);
+    display: inline-block;
+}
+
+.lateral__imagen-perfil {
+    margin: 0rem auto 0rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13.5rem;
+    width: 13.5rem;
+    background-color: none;
+    border: 4px solid var(--crema);
+    border-radius: 50%;
+}
+
+    .lateral__imagen-perfil img {
+        width: 11.5rem;
+        height: auto;
+    }
+
+.lateral__linea-imagen {
+    width: 100%;
+    height: 0.6rem;
+    background-color: var(--crema);
+    margin: 2.5rem 0rem 5.5rem 0rem;
+}
+
+.lateral__lista {
+    color: var(--crema);
+}
+
+    .lateral__lista h4 {
+        font-size: 2.4rem;
+        line-height: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .lateral__lista div {
+        width: 12rem;
+        height: 0.4rem;
+        background-color: var(--crema);
+    }
+
+    .lateral__lista ul {
+        margin-bottom: 4rem;
+        padding-top: 2rem;
+    }
+
+    .lateral__lista li {
+        font-style: var(--roboto);
+        font-size: 1.8rem;
+        font-weight: normal;
+        list-style-type: none;
+        margin-bottom: 1.8rem;
+    }
+
+
+/* --------------- Titulo de seccion --------------- */
+.seccion__titulo {
+    color: var(--negro);
+    margin-bottom: 4rem;
+}
+
+    .seccion__titulo h4 {
+        font-size: 3.6rem;
+        font-weight: bold;
+        line-height: 2.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .seccion__titulo div {
+        width: 100%;
+        height: 0.6rem;
+        background-color: var(--negro);
+    }
+
+.perfil__datos {
+    display: flex;
+    padding-left: 7rem;
+    flex-wrap: wrap;
+}
+
+    .perfil__datos p,
+    .perfil__datos h4 {
+        font-size: 2.4rem;
+        font-style: normal;
+        line-height: 1.8rem;
+        flex-basis: 50%;
+        margin-bottom: 1.5rem;
+    }
+
+    .perfil__datos h4 {
+        font-style: var(--medium);
+    }
+
+    .perfil__datos div {
+        width: 100%;
+        height: 0.19rem; /*Con "0.2" se buggea*/
+        margin-bottom: 4rem;
+        background-color: var(--negro);
+    }
+
+
+
+/* --------------- Musica-spotify --------------- */
+.musica {
+    margin-top: 10rem;
+}
+
+.musica__album {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.musica__album__portada {
+    flex-basis: 50%;
+}
+
+    .musica__album__portada img {
+        width: 90%;
+        height: auto;
+    }
+
+.musica__datos {
+    display: flex;
+    flex-direction: column;
+}
+
+.musica__album__titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
+
+    .musica__album__titulo h4 {
+        font-size: 2.8rem;
+        font-weight: bold;
+        line-height: 1.8rem;
+    }
+
+    .musica__album__titulo img {
+        width: 2.2rem;
+        height: auto;
+        cursor: pointer;
+        /*transform: rotate(90deg);*/
+    }
+
+    .musica__album__titulo p {
+        font-size: 1.8rem;
+        font-weight: normal;
+        flex-basis: 100%;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .musica__album__titulo iframe {
+        width: 100%;
+        height: 24rem;
+    }
+
+
+
+/* --------------- Listas --------------- */
+.listas {
+    margin-top: 10rem;
+}
+
+#mini-linea {
+    width: 17.5%;
+    height: 0.6rem;
+    background-color: var(--negro);
+}
+
+.listas__flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.listas__grid {
+    display: grid;
+    grid-template-columns: 7.5% 10% 30% 21.5% auto auto;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+    .listas__grid div {
+        /*border: 1px solid var(--rojo);*/
+    }
+
+    .listas__grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    .listas__grid h4 {
+        font-style: var(--rubik);
+        font-size: 3.6rem;
+        font-weight: 800;
+        color: var(--rojo);
+    }
+
+    .listas__grid h5 {
+        font-size: 2.4rem;
+        font-weight: bold;
+        padding-left: 20%;
+    }
+
+    .listas__grid p {
+        font-size: 1.8rem;
+        font-weight: normal;
+        margin: auto;
+    }
+
+    .listas__grid div:nth-child(4),
+    .listas__grid div:nth-child(5) {
+        /*justify-self: center;*/
+    }
+
+    .listas__grid div:last-child {
+        justify-self: end;
+    }
+
+        .listas__grid div:last-child img {
+            width: 2.2rem;
+            height: auto;
+            cursor: pointer;
+        }
+
+
+.listas__crear {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--rojo);
+    margin-top: -1rem;
+    margin-bottom: 6rem;
+}
+
+    .listas__crear h4 {
+        font-size: 3.4rem;
+        font-weight: bold;
+        margin-right: 1rem;
+    }
+
+    .listas__crear p {
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+
+
+#footer-perfil {
+    /*padding-left: 7.5%;*/
+    padding-right: 7.5%;
+}
+
+#footer-flex {
+    min-width: 90rem;
+}

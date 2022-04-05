@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+
+    <title>Perfil</title>
+
+    <!-- Normalize -->
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!-- CloudFlare Libreria -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" />
+    <!-- icon libreria -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fuentes -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik:wght@800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+    </style>
+
+    <!-- Estilos -->
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/perfil.css">
+</head>
+
+
+<body>
+    <header>
+        <nav id="menuHorizontal">
+            <div class="barraMenu">
+                <a href="index.html"><img src="img/home/logo-small.png" alt="logo Rolling Stone" /></a>
+                <div class="barraMenu__menu">
+                    <a href="menu-hamburguesa.html"><h3><i class="fas fa-bars"></i>Menú</h3></a>
+                    <a href="seccion-musica.html"><h3>Música</h3></a>
+                    <h3>Cine/Tv</h3>
+                    <h3>Actualidad</h3>
+                    <h3>Life Style</h3>
+                </div>
+
+                <div class="barraMenu__sesion">
+                    <button href="perfil.html">Iniciar sesión</button>
+                    <i class="fas fa-sort-down"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="main">
+        <div class="lateral">
+            <div class="lateral__imagen-perfil">
+                <img src="img/perfil/imagen-de-perfil.png" />
+            </div>
+            <div class="lateral__linea-imagen"></div>
+
+            <div class="lateral__lista">
+                <h4>Mi perfil</h4>
+                <div></div><!--Linea-->
+                <ul>
+                    <li>Perfil</li>
+                    <li>Datos Personales</li>
+                    <li>Newsletters</li>
+                </ul>
+            </div>
+
+            <div class="lateral__lista">
+                <h4>Lecturas</h4>
+                <div></div><!--Linea-->
+                <ul>
+                    <li>Favoritas</li>
+                    <li>Historial</li>
+                </ul>
+            </div>
+
+            <div class="lateral__lista">
+                <h4>Pagos</h4>
+                <div></div><!--Linea-->
+                <ul>
+                    <li>Mis pagos</li>
+                    <li>Pagos pendientes</li>
+                    <li>Ver facturas</li>
+                    <li>Subscripción</li>
+                    <li>RS Premium</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contenedor">
+            <!-- Pefil -->
+            <div class="perfil">
+                <div class="seccion__titulo">
+                    <h4>Perfil</h4>
+                    <div></div><!--Linea-->
+                </div>
+                <div class="perfil__datos">
+                    <p>Nombre y apellido</p>
+                    <h4>Carla Rodríguez</h4>
+                    <div></div><!--Linea-->
+                    <p>Correo</p>
+                    <h4>carlitarodriguez1@gmail.com</h4>
+                    <div></div><!--Linea-->
+                </div>
+            </div>
+
+            <!-- Musica-Spotify -->
+            <div class="musica">
+                <div class="seccion__titulo">
+                    <h4>Estas escuchando</h4>
+                    <div></div><!--Linea-->
+                </div>
+                <div class="musica__album">
+                    <div class="musica__album__portada"><img src="img/perfil/album-disco.png"></div>
+
+                    <div class="musica__album__titulo">
+                        <h4>¿A Dónde Vamos?</h4>
+                        <img src="img/perfil/opciones.png">
+                        <p>32 Canciones, 1hs 32minutos</p>
+                        <iframe src="https://open.spotify.com/embed/album/01R2vYq9iDhn4ZXtM5dd7i?theme=0" width="50" height="50" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mis Playlist -->
+            <div class="listas">
+                <div class="seccion__titulo">
+                    <h4>Mis listas</h4>
+                    <div id="mini-linea"></div><!--Linea-->
+                </div>
+
+                <div class="listas__flex">
+                    <div class="listas__grid">
+                        <div><h4>1</h4></div>
+                        <div><img src="img/perfil/album-1.png"></div>
+                        <div><h5>Funk & Soul</h5></div>
+                        <div><p>57 Canciones</p></div>
+                        <div><p>3hs 2minutos</p></div>
+                        <div><img src="img/perfil/opciones.png"></div>
+                    </div>
+
+                    <div class="listas__grid">
+                        <div><h4>2</h4></div>
+                        <div><img src="img/perfil/album-2.png"></div>
+                        <div><h5>Jazz relax</h5></div>
+                        <div><p>17 Canciones</p></div>
+                        <div><p>56 minutos</p></div>
+                        <div><img src="img/perfil/opciones.png"></div>
+                    </div>
+
+                    <div class="listas__grid">
+                        <div><h4>3</h4></div>
+                        <div><img src="img/perfil/album-3.png"></div>
+                        <div><h5>Parchadito</h5></div>
+                        <div><p>42 Canciones</p></div>
+                        <div><p>2hs 11minutos</p></div>
+                        <div><img src="img/perfil/opciones.png"></div>
+                    </div>
+                </div>
+
+                <div class="listas__crear">
+                    <h4>+</h4>
+                    <p>Crear lista</p>
+                </div>
+            </div>
+        </div><!-- end contenedor -->
+    </div><!-- end main -->
+
+    <!-- Footer v1-->
+    <footer  id="footer-perfil">
+        <div class="footer-flex" id="footer-flex">
+            <div class="footer__seccion">
+                <div><a href="seccion-musica.html"><h4>Música</h4></a></div>
+                <div><img src="img/footer/linea crema-2mm.png" /></div>
+                <div><h5>Noticias</h5></div>
+                <div><h5>Listados</h5></div>
+                <div><h5>Reseñas</h5></div>
+                <div><h5>Entrevistas</h5></div>
+                <div><a href="seccion-musica-historia.html"><h5>Historias</h5></a></div>
+                <div><h5>Festivales</h5></div>
+                <div><h5>Galeria</h5></div>
+            </div>
+            <div class="footer__seccion">
+                <div><h4>Cine/Tv</h4></div>
+                <div><img src="img/footer/linea crema-2mm.png" /></div>
+                <div><h5>Listados</h5></div>
+                <div><h5>Noticias</h5></div>
+                <div><h5>Reseñas</h5></div>
+                <div><h5>Entrevistas</h5></div>
+                <div><h5>Historias</h5></div>
+            </div>
+            <div class="footer__seccion">
+                <div><h4>Actualidad</h4></div>
+                <div><img src="img/footer/linea crema-2mm.png" /></div>
+                <div><h5>Noticias</h5></div>
+                <div><h5>Cultura</h5></div>
+                <div><h5>Deportes</h5></div>
+                <div><h5>Políticas</h5></div>
+                <div><h5>Reportajes</h5></div>
+            </div>
+            <div class="footer__seccion">
+                <div><h4>Life Style</h4></div>
+                <div><img src="img/footer/linea crema-2mm.png" /></div>
+                <div><h5>Fashion</h5></div>
+                <div><h5>Eventos</h5></div>
+                <div><h5>Experiencias</h5></div>
+                <div><h5>Comida</h5></div>
+                <div><h5>Tragos</h5></div>
+            </div>
+            <div class="footer__seccion">
+                <div><h4>RS Premium</h4></div>
+                <div><img src="img/footer/linea crema-2mm.png" /></div>
+                <div><h5>Revista Digital</h5></div>
+                <div><h5>Raw Sessions</h5></div>
+                <div><h5>Entrevistas</h5></div>
+            </div>
+            <div class="footer__seccion">
+                <div><h4>Rs Favoritos</h4></div>
+                <div><img src="img/footer/linea crema-2mm.png" /></div>
+                <div><h5>Artistas Nacionales</h5></div>
+                <div><h5>Lo más escuchado</h5></div>
+                <div><h5>Podcast</h5></div>
+            </div>
+        </div>
+
+        <div class="footer__linea"><img src="img/footer/linea crema-4mm.png" /></div>
+        <div class="footer-flex">
+            <div class="footer__info"><h5>hola@rollingstone.co</h5></div>
+            <div class="footer__info"><h5></h5></div>
+            <div class="footer__info"><h5></h5></div>
+            <div class="footer__info"><h5>Privacidad</h5></div>
+            <div class="footer__info"><h5>Aviso Legal</h5></div>
+            <div class="footer__info"><h5>Tasty Media 2020</h5></div>
+        </div>
+    </footer>
+</body>
+</html>

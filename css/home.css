@@ -1,0 +1,566 @@
+:root {
+    --fuentePrincipal: "Roboto", sans-serif;
+    --fuenteSecundaria: "Archivo", sans-serif;
+    --fuenteNumeros: "Rubik", sans-serif;
+    --fuenteTitular: "Archivo Black", sans-serif;
+    --rojo: #d32531;
+    --negro: #1b1b1b;
+    --crema: #fbf5eb;
+    --crema: #fbf5eb;
+    --cardColor: #f6eee0;
+    --medium: 500;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*  1 rem = 10px */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--crema);
+    font-family: var(--fuentePrincipal);
+    color: var(--negro);
+}
+
+p, img, h4, h3, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*  Utilidades */
+.mostar {
+    display: block;
+}
+
+.ocultar {
+    display: none;
+}
+
+.border {
+    border: 2px solid #00ffff;
+}
+
+/* Componentes Reetulizables */
+
+/*--------------------- Separadores ---------------------*/
+.separador-1 {
+    width: 100%;
+    height: 14rem;
+    background-color: var(--rojo);
+}
+
+.separador-rojo {
+    background-color: var(--rojo);
+    height: 14rem;
+    color: var(--crema);
+    padding-top: 5.5rem;
+    margin-bottom: 6rem;
+}
+
+.separador-rojo__item {
+    margin-left: auto;
+}
+
+    .separador-rojo__item h2 {
+        font-style: var(--fuenteSecundaria);
+        font-size: 4.2rem;
+        line-height: 3.2rem;
+        color: var(--crema);
+    }
+
+    .separador-rojo__item div {
+        background-color: var(--crema);
+        width: 20rem;
+        height: 1.8rem;
+        margin-top: 1rem;
+    }
+/* -------------------- Portada --------------------*/
+.portada__secciones a{
+  width: 11rem;
+  height: 5;
+}
+
+.portada__titulo a{
+  color: var(--crema);
+}
+
+/* -------------------- Seccion 1: Trending --------------------*/
+.seccion-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -7rem;
+    width: 100%;
+}
+
+.seccion-1__noticia {
+    background-image: url(../img/home/segunda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 72rem;
+    width: 65.5%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+    .seccion-1__noticia img {
+        width: 100%;
+        height: auto;
+    }
+
+    .seccion-1__noticia h4 {
+        margin-top: 37%;
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 3rem;
+        color: var(--crema);
+        margin-bottom: 1rem;
+    }
+
+    .seccion-1__noticia p {
+        font-size: 1.6rem;
+        font-weight: var(--medium);
+        line-height: 2.2rem;
+        color: var(--crema);
+    }
+
+.seccion-1__trending h2 {
+    font-style: var(--fuenteSecundaria);
+    font-size: 4.2rem;
+    font-weight: bold;
+    line-height: 3.5rem;
+    color: var(--crema);
+    margin-bottom: 2rem;
+}
+
+.seccion-1__trending img {
+    margin-top: 1rem;
+    width: 10.5rem;
+    height: auto;
+}
+
+.seccion-1__trending__grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25% 75%;
+    padding: 2rem 0rem 1rem 0rem;
+    background-color: var(--cardColor);
+    max-width: 30rem;
+    height: auto;
+}
+
+    .seccion-1__trending__grid h4 {
+        font-style: var(--fuenteNumeros);
+        font-size: 3.6rem;
+        font-weight: 800;
+        color: var(--rojo);
+        text-align: center;
+        line-height: 4rem;
+    }
+
+    .seccion-1__trending__grid p {
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 2rem;
+        color: var(--negro);
+        padding-right: 2.5rem;
+    }
+
+    .seccion-1__trending__grid div {
+        margin-bottom: 1rem;
+    }
+
+
+
+
+
+/*--------------------- Seccion 2: Destacados y newsletter ---------------------*/
+.destacados-newsletter {
+    background-color: var(--negro);
+    margin-top: 6rem;
+    width: 100%;
+    height: auto;
+}
+
+/* Destacados */
+.destacados h2 {
+    padding-top: 6rem;
+    font-family: var(--fuenteSecundaria);
+    color: var(--crema);
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 3.2rem;
+    margin-bottom: 3rem;
+}
+
+.destacados-imagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+    .destacados-imagenes h3 {
+        font-family: var(--fuentePrincipal);
+        color: var(--crema);
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 28px;
+        margin-top: -8rem;
+        padding-left: 2.4rem;
+        cursor: pointer;
+    }
+
+#destacados-img-1 {
+    width: 407px;
+    height: 252px;
+    cursor: pointer;
+}
+
+#destacados-img-2 {
+    width: 407px;
+    height: 252px;
+    cursor: pointer;
+}
+
+#destacados-img-3 {
+    width: 198px;
+    height: 252px;
+    cursor: pointer;
+}
+
+#texto-badBunny {
+    margin-top: -5rem;
+}
+
+/* Newsletter */
+.newsletter {
+    margin-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+    .newsletter h2 {
+        font-family: var(--fuenteSecundaria);
+        color: var(--crema);
+        font-size: 42px;
+        font-weight: bold;
+        line-height: 3.2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Linea */
+    .newsletter img {
+        width: 33.7rem;
+        height: 0.4rem;
+        margin-top: 1.5rem;
+    }
+
+#caja-newsletter {
+    width: 40.6rem;
+    height: 5rem;
+    border: 0px;
+    border-radius: 0px;
+    font-family: var(--fuentePrincipal);
+    color: var(--negro);
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 2rem;
+    outline: none;
+}
+
+#boton-newsletter {
+    width: 13.9rem;
+    height: 5.1rem;
+    border: 0px;
+    border-radius: 0px;
+    margin-left: -1rem;
+    background-color: var(--rojo);
+    font-family: var(--fuentePrincipal);
+    color: var(--crema);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* -------------------- Seccion 4: Reseñas de Musica --------------------*/
+
+/* Reseñas */
+.reseñas {
+    background-color: var(--negro);
+    margin-top: 5rem;
+    padding: 4rem 0rem 6rem 0rem;
+}
+
+    .reseñas img {
+        width: 100%;
+    }
+
+.reseñas__titulo {
+    font-size: 4.2rem;
+    line-height: 3.2rem;
+    margin-bottom: 1rem;
+    color: var(--crema);
+}
+
+.reseña__caja {
+    display: flex;
+    justify-content: space-between;
+}
+
+.unaReseña {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+    .unaReseña:nth-child(1) {
+        margin-right: 4rem;
+    }
+
+    .unaReseña:nth-child(2),
+    .unaReseña:nth-child(3) {
+        margin-right: 4rem;
+        margin-left: 4rem;
+    }
+
+    .unaReseña:nth-child(4) {
+        margin-left: 5rem;
+    }
+
+.reseñas__nombre {
+    color: var(--crema);
+    font-size: 2.4rem;
+    font-weight: var(--medium);
+    line-height: 3rem;
+}
+
+.reseñas__autor {
+    color: var(--crema);
+    font-size: 1.4rem;
+    font-weight: var(--medium);
+    margin-top: 0.5rem;
+}
+
+
+
+
+
+/* -------------------- Reseñas de Cine --------------------*/
+.unaReseña-cine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 4rem 0rem 0rem;
+    max-width: 17rem;
+}
+
+    .unaReseña-cine img {
+        max-width: 17rem;
+        width: 100%;
+    }
+
+    .unaReseña-cine:last-child {
+        margin-right: 0;
+    }
+
+.reseña__caja-cine {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+form {
+    width: 17rem;
+    margin: 0 auto;
+    height: 50px;
+}
+
+    form p {
+        text-align: center;
+    }
+
+    form label {
+        color: var(--rojo);
+        padding-left: 1rem;
+        font-size: 2.5rem;
+    }
+
+input[type="radio"] {
+    display: none;
+}
+
+.clasificacion {
+    margin-top: 1.8rem;
+}
+
+.estrella-blanca {
+    color: var(--crema);
+}
+
+.estrella-primera {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+/* ---------------- revista ---------------*/
+.revista {
+    color: var(--crema);
+    background-color: var(--rojo);
+}
+
+.revista__subMenu {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 2rem;
+    /*padding-top: 6rem;*/
+}
+
+    .revista__subMenu p {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 1.8rem;
+        margin-right: 4.5%;
+        color: var(--crema);
+        cursor: pointer;
+    }
+
+        .revista__subMenu p:hover {
+            line-height: 2.2rem;
+            border-bottom: 2px solid var(--crema);
+        }
+
+.revista__subMenu__titulo {
+    display: flex;
+    flex-direction: column;
+    margin-right: 6rem;
+}
+
+    .revista__subMenu__titulo h4 {
+        font-family: var(--fuenteSecundaria);
+        font-size: 4.2rem;
+        font-weight: bold;
+        line-height: 3.2rem;
+    }
+
+    .revista__subMenu__titulo div {
+        width: 9.4rem;
+        height: 1.8rem;
+        background-color: var(--crema);
+        margin-bottom: 1rem;
+    }
+
+.revista__subMenu__unete {
+    margin-left: auto;
+    padding-top: 12rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: var(--crema);
+    cursor: pointer;
+}
+
+    .revista__subMenu__unete h5 {
+        font-size: 2.2rem;
+        line-height: 1.8rem;
+        color: var(--rojo);
+    }
+
+#margin-bottom-2rem {
+    margin-bottom: 2rem;
+}
+
+#padding-bottom-2rem {
+    padding-bottom: 2rem;
+}
+
+
+.revista__flex {
+    display: flex;
+    width: 79%;
+    margin-top: 2rem;
+    padding-bottom: 8rem;
+}
+
+.revista__flex__imagen {
+    width: 48%;
+    height: auto;
+}
+
+    .revista__flex__imagen img {
+        width: 100%;
+    }
+
+.revista__flex__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 52%;
+    padding-left: 8rem;
+    padding-bottom: 5rem;
+}
+
+    .revista__flex__texto h2 {
+        font-family: var(--fuenteTitular);
+        font-size: 3.6rem;
+        margin-bottom: 3rem;
+    }
+
+    .revista__flex__texto p {
+        font-family: var(--fuenteSecundaria);
+        font-weight: normal;
+        font-size: 2.4rem;
+        width: 80%;
+        margin-bottom: 7rem;
+    }
+
+
+.revista__flex__texto__botones {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+    .revista__flex__texto__botones button {
+        background-color: var(--rojo);
+        border: 2px solid var(--crema);
+        color: var(--crema);
+        width: 45%;
+        height: 6rem;
+        font-size: 2.4rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+        .revista__flex__texto__botones button:hover {
+            background-color: var(--crema);
+            color: var(--rojo);
+        }
+
+.revista__flex__texto__botones-linea {
+    width: 45%;
+    height: 0.2rem;
+    margin-top: 0.8rem;
+    background-color: var(--crema);
+}

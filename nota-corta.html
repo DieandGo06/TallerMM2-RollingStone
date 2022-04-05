@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Nota corta</title>
+
+  <!-- CloudFlare Libreria -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+  crossorigin="anonymous" />
+  <!-- icon libreria -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link type="text/css" rel="stylesheet" href="css/main.css">
+  <link type="text/css" rel="stylesheet" href="css/nota-corta.css">
+</head>
+
+<body>
+  <!-- Menu compacto -->
+  <header>
+    <nav id="menuHorizontal" class="ocultar">
+      <div class="barraMenu">
+        <a href="index.html"><img src="img/home/logo-small.png" alt="logo Rolling Stone" /></a>
+        <div class="barraMenu__menu">
+          <a href="menu-hamburguesa.html"><h3><i class="fas fa-bars"></i>Menu</h3></a>
+          <a href="seccion-musica.html"><h3>Música</h3></a>
+          <h3>Cine/Tv</h3>
+          <h3>Actualidad</h3>
+          <h3>Life Style</h3>
+        </div>
+
+        <div class="barraMenu__sesion">
+          <!--<h4>Iniciar sesión</h4>-->
+
+          <button><a href="inicio-sesion.html">Iniciar sesion</a></button>
+          <i class="fas fa-sort-down"></i>
+        </div>
+      </div>
+
+
+
+
+      <div class="reproductor">
+        <div class="reproductor__comandos">
+          <img src="img/home/repro-random.png" alt="">
+          <img src="img/home/repro-back.png" alt="">
+          <button>
+            <img id="play-icon" src="img/home/repro-play.png" alt="">
+          </button>
+          <img src="img/home/repro-next.png" alt="">
+          <img src="img/home/repro-repeat.png" alt="">
+        </div>
+
+        <div class="reproductor__musica">
+
+          <div class="reproductor__musica__lista">
+
+            <div id="reproComprimido"
+            class="reproductor__musica__lista__comprimido">
+            <img src="img/home/repro-list.png" alt="">
+            <h3 id="lista__elegida">Mis favoritos</h3>
+          </div>
+
+
+          <div id="reproDesplegado"
+          class="reproductor__musica__lista__desplegado">
+          <h3>Invisible</h3>
+          <h3 value="1">Mi lista</h3>
+          <h3>RS Favoritos</h3>
+          <h3>Rock</h3>
+          <h3>Grunge</h3>
+          <h3>Rap</h3>
+          <h3>Trap</h3>
+        </div>
+      </div>
+
+      <div class="reproductor__musica__album">
+        <img src="img/home/repro-album.png" alt="">
+        <h3>Poets of the Falls</h3>
+      </div>
+
+      <div>
+        <h3>Carnival of Rust</h3>
+      </div>
+    </div>
+    <img class="reproductor__settings" src="img/home/repro-settings.png" alt="">
+    <div class="reproductor__info"></div>
+  </div>
+</nav>
+</header>
+
+<!-- Navbar -->
+<section>
+  <div class="menu-nota">
+    <div class="menu-nota__logo"><a href="index.html"><img src="img/nota-corta/logo.png"></a></div>
+    <div class="menu-nota__burger">
+      <div><a href="menu-hamburguesa.html"><img src="img/nota-corta/burguer-menu.png"></a></div>
+      <div><a href="menu-hamburguesa.html"><h4>Menu</h4></a></div>
+    </div>
+    <div><a href="seccion-musica.html"><h4>Música</h4></a></div>
+    <div><h4>Cine/Tv</h4></div>
+    <div><h4>Actualidad</h4></div>
+    <div><h4>Life Style</h4></div>
+  </div>
+</section>
+
+<!-- Portada -->
+<div class="fondo-negro">
+  <div class="fondo-rojo">
+    <div><h4>Musica > Noticia</h4></div>
+    <div class="portada">
+      <img src="img/nota-corta/img-portada.jpg" alt="Premio Grammy's">
+      <div class="titulo-autor">
+        <h1>Premios Grammy<br />anuncian más<br />cambios de reglas</h1>
+        <div>
+          <img src="img/nota-corta/linea-autor.png" alt="" class="linea-autor">
+          <h3 class="parrafos-portada">Por: Enrique Ospina</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div><h5>Fotografía por: Frederic J. Brown</h5></div>
+</div>
+
+
+<!-- Cuerpo de la nota -->
+<div class="cuerpo-nota">
+  <div class="fondo-negro-trending">
+  <div class="seccion-1__trending">
+      <h2>Más del autor</h2>
+      <div class="seccion-1__trending__grid">
+        <div><h4>1</h4></div>
+        <div><p>Fearless de Taylor Swift no está nominado a los Grammy</p></div>
+        <div><h4>2</h4></div>
+        <div><p>Britney Spears por primera vez elige a su propio abogado</p></div>
+        <div><h4>3</h4></div>
+        <div><p>La disputa de Sex Pistols por el uso de su música en Pistol</p></div>
+        <div><h4>4</h4></div>
+        <div><p>Lana Del Rey pospone el lanzamiento de Blue Banisters</p></div>
+        <div><h4>5</h4></div>
+        <div><p>Rob Zombie dirigirá un filme basado en Los Munsters</p></div>
+      </div>
+      <img src="img/home/trending-lines.png">
+    </div>
+  </div>
+
+  <div class="fecha-redes-sociales">
+    <div><img src="img/nota-corta/linea-fecha.png" alt="" class="linea-fecha"><p class="estilo-fecha">29 de Junio 2021</p></div>
+    <img src="img/nota-corta/redes-sociales.png" alt="Compartir en redes sociales" class="img-redes-sociales">
+  </div>
+
+  <div class="nota">
+    <div><img src="img/nota-corta/linea-bajada-titulo.png" alt="" class="linea-subtitulo"><h4>Estas modificaciones están relacionadas con las categorías de Álbum del año y aquellas relacionadas con la música electrónica, la clásica y la correspondiente a producciones audiovisuales</h4></div>
+    <p>La Academia Nacional de Artes y Ciencias de la Grabación ha anunciado nuevos cambios en las reglas de los Premios Grammy.</p>
+
+    <p>Una de las modificaciones más significativas tiene que ver con la categoría de Álbum del año. De este modo, si un disco se encuentra nominado, no solamente el intérprete será quien reciba el reconocimiento sino todo el equipo detrás de su producción y los artistas con los que colabore.</p>
+
+    <p>Por otro lado, la categoría anteriormente conocida como Mejor grabación dance recibirá el nombre de Mejor grabación dance/electrónica, al igual que el premio a mejor álbum de estos géneros. En el caso de la música clásica, los sencillos que no pertenezcan a un disco podrán entrar a participar por Mejor interpretación de orquesta, Mejor interpretación coral, Mejor interpretación de música de cámara/conjunto pequeño, Mejor solista instrumental clásico y Mejor composición contemporánea clásica.</p>
+
+    <p>En el caso de la música compuesta para medios audiovisuales, los autores tendrán dos opciones: postular sus canciones o álbumes el mismo año de su lanzamiento (cuando la producción en cuestión aún no se haya estrenado), en categorías que no estén relacionadas con este campo; o esperar hasta el año siguiente cuando la cinta ya se haya presentado en los cines, e inscribir sus creaciones musicales en las categorías correspondientes. De elegirse la primera, no se podrán inscribir en la segunda.</p>
+
+    <p>Estos son algunos de los cambios más importantes que ahora se suman a los mencionados por la Academia a principios de este mes, cuando anunció el fin de los polémicos comités secretos para permitir que sus más de 11 mil miembros sean quienes seleccionen las nominaciones a partir de la próxima ceremonia de los Premios Grammy.</p>
+  </div>
+</div>
+
+<!--Comentarios-->
+<div class="comentarios">
+  <div class="comentarios__linea-gruesa"></div>
+  <div><h3>Comentarios</h3></div>
+  <form>
+    <div class="input-comentario">
+    <input id="comentario__usuario" type="text" name="comentario" autocomplete="off" placeholder="¿Qué opinas vos?" onfocus="this.placeholder=''" onblur="this.placeholder='¿Qué opinas vos?'">
+    <input id="comentario__enviar" type="submit" value="Publicar">
+    </div>
+  </form>
+
+  <div class="comentarios__numero">
+    <h4>3 Comentarios</h4>
+    <div class="linea"></div>
+  </div>
+  <div class="comentarios__publicado">
+    <div class="comentarios__publicado-linea"></div>
+    <div class="comentarios__publicado__info">
+      <h4>Rodrigo Campero</h4>
+      <p>Hace 31 minutos</p>
+    </div>
+    <div><p>Me parecen buenas medidas.</p></div>
+    <div class="comentarios__publicado__acciones">
+      <h4>Responder</h4>
+      <div class="comentarios__publicado__acciones-like"><img src="img/main/like.png"></div>
+      <p>14</p>
+      <div class="comentarios__publicado__acciones-dislike"><img src="img/main/dislike.png"></div>
+    </div>
+  </div>
+  <div class="comentarios__publicado">
+    <div class="comentarios__publicado-linea"></div>
+    <div class="comentarios__publicado__info">
+      <h4>Arnaldo Saladillo</h4>
+      <p>Hace 5 horas</p>
+    </div>
+    <div><p>Totalmente de acuerdo!!! me parece mucho más justo, todos necesitamos reconocimiento.</p></div>
+    <div class="comentarios__publicado__acciones">
+      <h4>Responder</h4>
+      <div class="comentarios__publicado__acciones-like"><img src="img/main/like.png"></div>
+      <p>4</p>
+      <div class="comentarios__publicado__acciones-dislike"><img src="img/main/dislike.png"></div>
+    </div>
+  </div>
+  <div class="comentarios__publicado">
+    <div class="comentarios__publicado-linea"></div>
+    <div class="comentarios__publicado__info">
+      <h4>María Gines</h4>
+      <p>Hace 2 días</p>
+    </div>
+    <div><p>Me encantó, muy buen cambio. Esto genera igualdad y más potencial para los artistas y sus equipos!</p></div>
+    <div class="comentarios__publicado__acciones">
+      <h4>Responder</h4>
+      <div class="comentarios__publicado__acciones-like"><img src="img/main/like.png"></div>
+      <p>2</p>
+      <div class="comentarios__publicado__acciones-dislike"><img src="img/main/dislike.png"></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Cards Noticias Relacionadas -->
+<section class="noticias__relacionadas">
+
+  <!-- Noticias Relacionadas -->
+  <section class="contenedor UltimasNoticias">
+    <div class="separador__lineas">
+      <div class="separador__lineas-gruesa"></div>
+      <div class="separador__lineas-fina"></div>
+      <h2>Noticias Relacionadas</h2>
+    </div>
+  </section>
+
+  <div class="contenedor">
+    <!-- primer row musica-->
+    <div class="cards">
+      <div class="card">
+        <img class="card__img" src="img/home/musica 2.jpg" alt="" />
+        <div class="card__info">
+          <p class="card__categoria">Música</p>
+          <h3 class="card__titulo">
+            Pom Pom Squad presenta Death of a Cheerleader, su álbum debut
+          </h3>
+          <p class="card__texto">
+            El proyecto de Mia Berrin es una declaración del grunge moderno
+          </p>
+          <p class="card__autor">Por: Graciela González</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card__img" src="img/home/musica 1.jpg" alt="" />
+        <div class="card__info">
+          <p class="card__categoria">Música</p>
+          <h3 class="card__titulo">Escucha You Right, la nueva colaboración entre Doja Cat y The Weeknd</h3>
+          <p class="card__texto">
+            La canción hace parte del tercer álbum de estudio de la rapera, Planet Her
+          </p>
+          <p class="card__autor">Por: Pablo Quintero</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card__img" src="img/home/musica 3.jpg" alt="" />
+
+        <div class="card__info">
+          <p class="card__categoria">Entrevistas</p>
+          <h3 class="card__titulo">Superlitio regresa junto a Fonseca en Perdóname, su nuevo sencillo</h3>
+          <p class="card__texto">
+            La banda colombiana presenta el primer adelanto de su décimo trabajo discográfico
+          </p>
+          <p class="card__autor">Por: Santiago Jaramillo</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Footer v1-->
+<footer>
+  <div class="footer-flex">
+    <div class="footer__seccion">
+      <div><a href="seccion-musica.html"><h4>Música</h4></a></div>
+      <div><img src="img/footer/linea crema-2mm.png" /></div>
+      <div><h5>Noticias</h5></div>
+      <div><h5>Listados</h5></div>
+      <div><h5>Reseñas</h5></div>
+      <div><h5>Entrevistas</h5></div>
+      <div><a href="seccion-musica-historia.html"><h5>Historias</h5></a></div>
+      <div><h5>Festivales</h5></div>
+      <div><h5>Galeria</h5></div>
+    </div>
+    <div class="footer__seccion">
+      <div><h4>Cine/Tv</h4></div>
+      <div><img src="img/footer/linea crema-2mm.png" /></div>
+      <div><h5>Listados</h5></div>
+      <div><h5>Noticias</h5></div>
+      <div><h5>Reseñas</h5></div>
+      <div><h5>Entrevistas</h5></div>
+      <div><h5>Historias</h5></div>
+    </div>
+    <div class="footer__seccion">
+      <div><h4>Actualidad</h4></div>
+      <div><img src="img/footer/linea crema-2mm.png" /></div>
+      <div><h5>Noticias</h5></div>
+      <div><h5>Cultura</h5></div>
+      <div><h5>Deportes</h5></div>
+      <div><h5>Políticas</h5></div>
+      <div><h5>Reportajes</h5></div>
+    </div>
+    <div class="footer__seccion">
+      <div><h4>Life Style</h4></div>
+      <div><img src="img/footer/linea crema-2mm.png" /></div>
+      <div><h5>Fashion</h5></div>
+      <div><h5>Eventos</h5></div>
+      <div><h5>Experiencias</h5></div>
+      <div><h5>Comida</h5></div>
+      <div><h5>Tragos</h5></div>
+    </div>
+    <div class="footer__seccion">
+      <div><h4>RS Premium</h4></div>
+      <div><img src="img/footer/linea crema-2mm.png" /></div>
+      <div><h5>Revista Digital</h5></div>
+      <div><h5>Raw Sessions</h5></div>
+      <div><h5>Entrevistas</h5></div>
+    </div>
+    <div class="footer__seccion">
+      <div><h4>Rs Favoritos</h4></div>
+      <div><img src="img/footer/linea crema-2mm.png" /></div>
+      <div><h5>Artistas Nacionales</h5></div>
+      <div><h5>Lo más escuchado</h5></div>
+      <div><h5>Podcast</h5></div>
+    </div>
+  </div>
+
+  <div class="footer__linea"><img src="img/footer/linea crema-4mm.png" /></div>
+  <div class="footer-flex">
+    <div class="footer__info"><h5>hola@rollingstone.co</h5></div>
+    <div class="footer__info"><h5></h5></div>
+    <div class="footer__info"><h5></h5></div>
+    <div class="footer__info"><h5>Privacidad</h5></div>
+    <div class="footer__info"><h5>Aviso Legal</h5></div>
+    <div class="footer__info"><h5>Tasty Media 2020</h5></div>
+  </div>
+</footer>
+
+<script src="js/action.js"></script>
+</body>
+</html>

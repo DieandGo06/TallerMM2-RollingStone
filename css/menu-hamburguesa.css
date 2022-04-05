@@ -1,0 +1,133 @@
+.contenedor-this {
+    max-width: 110rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1400px) {
+    .contenedor-this {
+      padding-right: 0.8%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .contenedor-this {
+        padding-left: 0.6%;
+    }
+}
+
+.menu-secciones-container {
+    padding-top: 7rem;
+}
+
+body{
+  background-color: var(--negro);
+}
+
+/* ------------ Barra de navegación ------------ */
+nav{
+  display: flex;
+  flex-direction: row;
+  margin-top: 4rem;
+  align-items: center;
+
+  /*
+  border: 5px solid #FFF;
+  */
+}
+
+    .lg-rolling-stone{
+      width: 16rem;
+      height: 4.5rem;
+      cursor: pointer;
+    }
+
+    .redes-sociales{
+      width: 16rem;
+      height: 3rem;
+      margin-left: 7rem;
+      cursor: pointer;
+    }
+
+    .cerrar{
+      width: 4rem;
+      height: 4rem;
+      margin-left: 5rem;
+      cursor: pointer;
+    }
+
+/* ----- Buscar ----- */
+nav input{
+  background-color: #FBF5EB;
+  color: #555555;
+  font-size: 20px;
+  font-weight: 500;
+  border: 0px;
+  padding-left: 6rem;
+  width: 47.6rem;
+  height: 4rem;
+  outline: none;
+}
+
+    .input-contenedor{
+      position: relative;
+      margin-left: 13rem;
+    }
+
+    .buscar-icon{
+      width: 1.5rem;
+      height: 1.5rem;
+      position: absolute;
+      top: 13px;
+      left: 2rem;
+    }
+
+/* ------------ Secciones ------------ */
+.menu-grid {
+ /*
+  background-color: var(--rojo);
+  border: 10px solid #FFF;
+  */
+  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 35rem 20rem;
+  grid-template-columns: 30rem 30rem 30rem 30rem;
+
+  /*
+  border: 5px solid #FFF;
+  */
+}
+
+.menu-seccion {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+    .menu-seccion h4 {
+      margin: 0rem;
+      font-size: 32px;
+      font-weight: bold;
+      color: var(--crema);
+      line-height: 2.4rem;
+      cursor: pointer;
+    }
+
+    .menu-seccion h5 {
+      margin: 0rem 0rem 2rem 0rem;
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--crema);
+      line-height: 1.8rem;
+      cursor: pointer;
+    }
+
+    .menu-seccion img {
+      margin: 1rem 0rem 2rem 0rem;
+      width: 16.4rem;
+      height: 0.2rem;
+    }
+
+    .menu-seccion div:nth-child(2) {
+      height: 3rem;
+    }

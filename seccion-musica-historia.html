@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Historias</title>
+
+    <!-- Normalize -->
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!-- CloudFlare Libreria -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" />
+    <!-- icon libreria -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fuentes -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@700&family=Roboto:wght@300;400;500;700&display=swap');
+    </style>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/seccion-musica.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+
+
+
+
+<body>
+
+    <header>
+        <nav id="menuHorizontal" class="ocultar">
+          <div class="barraMenu">
+              <a href="index.html"><img src="img/home/logo-small.png" alt="logo Rolling Stone" /></a>
+              <div class="barraMenu__menu">
+                  <a href="menu-hamburguesa.html"><h3><i class="fas fa-bars"></i>Menu</h3></a>
+                  <a href="seccion-musica.html"><h3>Música</h3></a>
+                  <h3>Cine/Tv</h3>
+                  <h3>Actualidad</h3>
+                  <h3>Life Style</h3>
+              </div>
+
+              <div class="barraMenu__sesion">
+                  <!--<h4>Iniciar sesión</h4>-->
+
+                  <button><a href="inicio-sesion.html">Iniciar sesion</a></button>
+                  <i class="fas fa-sort-down"></i>
+              </div>
+          </div>
+
+
+            <div class="reproductor">
+                <div class="reproductor__comandos">
+                    <img src="img/home/repro-random.png" alt="">
+                    <img src="img/home/repro-back.png" alt="">
+                    <button>
+                        <img id="play-icon" src="img/home/repro-play.png" alt="">
+                    </button>
+                    <img src="img/home/repro-next.png" alt="">
+                    <img src="img/home/repro-repeat.png" alt="">
+                </div>
+
+                <div class="reproductor__musica">
+
+                    <div class="reproductor__musica__lista">
+
+                        <div id="reproComprimido"
+                             class="reproductor__musica__lista__comprimido">
+                            <img src="img/home/repro-list.png" alt="">
+                            <h3 id="lista__elegida">Mis favoritos</h3>
+                        </div>
+
+
+                        <div id="reproDesplegado"
+                             class="reproductor__musica__lista__desplegado">
+                            <h3>Invisible</h3>
+                            <h3 value="1">Mi lista</h3>
+                            <h3>RS Favoritos</h3>
+                            <h3>Rock</h3>
+                            <h3>Grunge</h3>
+                            <h3>Rap</h3>
+                            <h3>Trap</h3>
+                        </div>
+                    </div>
+
+                    <div class="reproductor__musica__album">
+                        <img src="img/home/repro-album.png" alt="">
+                        <h3>Poets of the Falls</h3>
+                    </div>
+
+                    <div>
+                        <h3>Carnival of Rust</h3>
+                    </div>
+                </div>
+                <img class="reproductor__settings" src="img/home/repro-settings.png" alt="">
+                <div class="reproductor__info"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="portada" style="background-image: url(img/seccion-musica-historia/portada.png);">
+        <div class="portada__inicio">
+            <div class="portada__inicio-menu"><a href="menu-hamburguesa.html"><img src="img/home/burger.png"></a></div>
+            <div class="portada__inicio-logo"><a href="index.html"><img src="img/home/logo.png"></a></div>
+        </div>
+        <div class="portada__secciones">
+            <a href="seccion-musica.html"><img class="portada__seccion" src="img/home/musica.png"></a>
+            <img class="portada__seccion" src="img/home/actualidad.png">
+            <img class="portada__seccion" src="img/home/cine.png">
+            <img class="portada__seccion" src="img/home/lifestyle.png">
+        </div>
+        <div class="portada__titulo" id="portada__titulo">
+            <div>
+                <h2>Bailando en la oscuridad</h2>
+            </div>
+            <p>Dua Lipa ignoró las modas, se convirtió en una “mujer alfa” y entregó el clásico de disco moderno que no sabíamos que necesitábamos</p>
+        </div>
+    </section>
+
+    <!-- SubMenu de Seccion -->
+    <div class="subMenu">
+        <div class="subMenu__flex contenedor">
+            <div class="subMenu__titulo">
+                <h4><a href="seccion-musica.html">Música</a></h4>
+                <div></div><!-- Linea -->
+            </div>
+            <p>Noticias</p>
+            <p><a href="seccion-musica-historia.html">Historias</a></p>
+            <p>Entrevistas</p>
+            <p>Reviews</p>
+            <p>Listados</p>
+        </div>
+    </div>
+
+    <!-- Separador negro -->
+    <div class="separador-negro"></div>
+
+    <!-- Primera noticia y trending-->
+    <section class="contenedor">
+        <div class="seccion-1">
+            <div class="seccion-1__noticia" style="background-image: url(img/seccion-musica-historia/primera-noticia.png);">
+                <h4>St. Vincent, entre la dignidad y la supervivencia</h4>
+                <p>Con 'Daddy’s Home', su nuevo álbum, la artista estadounidense nos guía en un viaje sónico y nostálgico</p>
+            </div>
+
+            <div class="seccion-1__trending">
+                <h2>Sugerencias</h2>
+                <div class="seccion-1__trending__grid">
+
+                    <div id="rojo"><h4>1</h4></div>
+                    <img id="primera-sugerencia"
+                         src="img/seccion-musica/sugerencias-1.png">
+                    <div class="seccion-1__trending__grid__info">
+                        <h5>drivers license</h5>
+                        <p>Olivia Rodrigo</p>
+                    </div>
+
+                    <div id="rojo"><h4>2</h4></div>
+                    <img src="img/seccion-musica/sugerencias-2.png">
+                    <div class="seccion-1__trending__grid__info">
+                        <h5>Amari</h5>
+                        <p>J. Cole</p>
+                    </div>
+
+                    <div id="rojo"><h4>3</h4></div>
+                    <img src="img/seccion-musica/sugerencias-3.png">
+                    <div class="seccion-1__trending__grid__info">
+                        <h5>Yonaguni</h5>
+                        <p>Bad Bunny</p>
+                    </div>
+
+                    <div id="rojo"><h4>4</h4></div>
+                    <img src="img/seccion-musica/sugerencias-4.png">
+                    <div class="seccion-1__trending__grid__info">
+                        <h5>Beggin'</h5>
+                        <p>Måneskin</p>
+                    </div>
+
+                    <div id="rojo"><h4>5</h4></div>
+                    <img id="ultima-sugerencia"
+                         src="img/seccion-musica/sugerencias-5.png">
+                    <div class="seccion-1__trending__grid__info">
+                        <h5>Que se mejoren</h5>
+                        <p>Wos</p>
+                    </div>
+                </div>
+
+                <div class="seccion-1__trending__lineas">
+                    <img src="img/home/trending-lines.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ultimas Noticias -->
+    <section class="contenedor UltimasNoticias">
+        <div class="separador__lineas">
+            <div class="separador__lineas-gruesa"></div>
+            <div class="separador__lineas-fina"></div>
+            <h2>Últimas noticias</h2>
+        </div>
+    </section>
+
+    <!-- Cards horizontales -->
+    <section class="contenedor">
+
+        <div class="card-horizontal">
+            <!-- card 1 -->
+            <div class="card-horizontal__image"><img src="img/seccion-musica-historia/foto-card-1.png"></div>
+            <div class="card-horizontal__texto">
+                <p class="card-horizontal__texto__categoria">Historia</p>
+                <h2 class="card-horizontal__texto__titulo">
+                    C . Tangana: Reconfigurando el camino de la música en español
+                </h2>
+                <div class="card-horizontal__texto__bajada">
+                    <p>C. Tangana habla sobre el proceso de creación, las influencias y el mundo que compone a El Madrileño, su más reciente álbum de estudio</p>
+                </div>
+                <p class="card-horizontal__texto__autor">
+                    Por: Diego Ortiz
+                </p>
+            </div>
+        </div><!-- end card -->
+
+        <div class="card-horizontal">
+            <!-- card 2 -->
+            <div class="card-horizontal__image"><img src="img/seccion-musica-historia/foto-card-2.png"></div>
+            <div class="card-horizontal__texto">
+                <p class="card-horizontal__texto__categoria">Historia</p>
+                <h2 class="card-horizontal__texto__titulo">
+                    El espíritu de Neil Peart
+                </h2>
+                <div class="card-horizontal__texto__bajada">
+                    <p>Por primera vez desde su muerte, sus compañeros de banda y esposa hablan sobre su legado y sus últimos años</p>
+                </div>
+                <p class="card-horizontal__texto__autor">
+                    Por: Brian Hiatt
+                </p>
+            </div>
+        </div><!-- end card -->
+
+        <div class="card-horizontal">
+            <!-- card 3 -->
+            <div class="card-horizontal__image"><img src="img/seccion-musica-historia/foto-card-3.png"></div>
+            <div class="card-horizontal__texto">
+                <p class="card-horizontal__texto__categoria">Historia</p>
+                <h2 class="card-horizontal__texto__titulo">
+                    Trigésimo año
+                </h2>
+                <div class="card-horizontal__texto__bajada">
+                    <p>Durante los 12 meses de 1991 los artistas más grandes de la música mundial lanzaron álbumes memorables, aquí recordamos algunos de los 50 más importantes</p>
+                </div>
+                <p class="card-horizontal__texto__autor">
+                    Por: María García Gómez
+                </p>
+            </div>
+        </div><!-- end card -->
+
+        <div class="card-horizontal">
+            <!-- card 4 -->
+            <div class="card-horizontal__image"><img src="img/seccion-musica-historia/foto-card-4.png"></div>
+            <div class="card-horizontal__texto">
+                <p class="card-horizontal__texto__categoria">Historia</p>
+                <h2 class="card-horizontal__texto__titulo">
+                    Entrevista Rolling Stone: El corazón rockero de Miley Cyrus
+                </h2>
+                <div class="card-horizontal__texto__bajada">
+                    <p>Cyrus vuelve con un nuevo álbum, una nueva perspectiva y mucho que decir sobre sus héroes, la sobriedad y obtener el respeto que merece</p>
+                </div>
+                <p class="card-horizontal__texto__autor">
+                    Por: Brittany Spanos
+                </p>
+            </div>
+        </div><!-- end card -->
+
+        <div class="card-horizontal">
+            <!-- card 5 -->
+            <div class="card-horizontal__image"><img src="img/seccion-musica-historia/foto-card-5.png"></div>
+            <div class="card-horizontal__texto">
+                <p class="card-horizontal__texto__categoria">Historia</p>
+                <h2 class="card-horizontal__texto__titulo">
+                    Musicians on Musicians: Taylor Swift & Paul McCartney
+                </h2>
+                <div class="card-horizontal__texto__bajada">
+                    <p>Comparten secretos de composición, hablan sobre hacer álbumes en casa y lo que han aprendido en la pandemia</p>
+                </div>
+                <p class="card-horizontal__texto__autor">
+                    Por: Patrick Doyle
+                </p>
+            </div>
+        </div><!-- end card -->
+
+        <div class="card-horizontal">
+            <!-- card 6 -->
+            <div class="card-horizontal__image"><img src="img/seccion-musica-historia/foto-card-6.png"></div>
+            <div class="card-horizontal__texto">
+                <p class="card-horizontal__texto__categoria">Historia</p>
+                <h2 class="card-horizontal__texto__titulo">
+                    Los Beatles y su separación, 50 años después
+                </h2>
+                <div class="card-horizontal__texto__bajada">
+                    <p>Los Beatles tuvieron la separación más famosa del rock. Un vistazo al dolor, la hermandad y por qué su música aún es relevante</p>
+                </div>
+                <p class="card-horizontal__texto__autor">
+                    Por: Rob Sheffield
+                </p>
+            </div>
+        </div><!-- end card -->
+
+        <div class="siguiente-pagina">
+            <p>siguiente página</p>
+            <img src="img/seccion-musica/next.png" />
+        </div>
+
+    </section>
+
+    <!-- Footer v1-->
+    <footer id="rojo">
+        <div class="footer-flex">
+            <div class="footer__seccion">
+                <div><a href="seccion-musica.html"><h4>Música</h4></a></div>
+                <div><img src="img/footer/linea crema-2mm.png" /></div>
+                <div><h5>Noticias</h5></div>
+                <div><h5>Listados</h5></div>
+                <div><h5>Reseñas</h5></div>
+                <div><h5>Entrevistas</h5></div>
+                <div><a href="seccion-musica-historia.html"><h5>Historias</h5></a></div>
+                <div><h5>Festivales</h5></div>
+                <div><h5>Galeria</h5></div>
+            </div>
+            <div class="footer__seccion">
+                <div><h4>Cine/Tv</h4></div>
+                <div><img src="img/footer/linea crema-2mm.png" /></div>
+                <div><h5>Listados</h5></div>
+                <div><h5>Noticias</h5></div>
+                <div><h5>Reseñas</h5></div>
+                <div><h5>Entrevistas</h5></div>
+                <div><h5>Historias</h5></div>
+            </div>
+            <div class="footer__seccion">
+                <div><h4>Actualidad</h4></div>
+                <div><img src="img/footer/linea crema-2mm.png" /></div>
+                <div><h5>Noticias</h5></div>
+                <div><h5>Cultura</h5></div>
+                <div><h5>Deportes</h5></div>
+                <div><h5>Políticas</h5></div>
+                <div><h5>Reportajes</h5></div>
+            </div>
+            <div class="footer__seccion">
+                <div><h4>Life Style</h4></div>
+                <div><img src="img/footer/linea crema-2mm.png" /></div>
+                <div><h5>Fashion</h5></div>
+                <div><h5>Eventos</h5></div>
+                <div><h5>Experiencias</h5></div>
+                <div><h5>Comida</h5></div>
+                <div><h5>Tragos</h5></div>
+            </div>
+            <div class="footer__seccion">
+                <div><h4>RS Premium</h4></div>
+                <div><img src="img/footer/linea crema-2mm.png" /></div>
+                <div><h5>Revista Digital</h5></div>
+                <div><h5>Raw Sessions</h5></div>
+                <div><h5>Entrevistas</h5></div>
+            </div>
+            <div class="footer__seccion">
+                <div><h4>Rs Favoritos</h4></div>
+                <div><img src="img/footer/linea crema-2mm.png" /></div>
+                <div><h5>Artistas Nacionales</h5></div>
+                <div><h5>Lo más escuchado</h5></div>
+                <div><h5>Podcast</h5></div>
+            </div>
+        </div>
+
+        <div class="footer__linea"><img src="img/footer/linea crema-4mm.png" /></div>
+        <div class="footer-flex">
+            <div class="footer__info"><h5>hola@rollingstone.co</h5></div>
+            <div class="footer__info"><h5></h5></div>
+            <div class="footer__info"><h5></h5></div>
+            <div class="footer__info"><h5>Privacidad</h5></div>
+            <div class="footer__info"><h5>Aviso Legal</h5></div>
+            <div class="footer__info"><h5>Tasty Media 2020</h5></div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/action.js"></script>
+</body>
+</html>

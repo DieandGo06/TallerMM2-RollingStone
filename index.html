@@ -1,0 +1,868 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>RollingStone</title>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;700&family=Roboto:wght@300;400;500;700&family=Rubik:wght@800&display=swap"
+        rel="stylesheet">
+
+    <!-- CloudFlare Libreria -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <!-- icon libreria -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+
+
+<body>
+    <header>
+        <nav id="menuHorizontal" class="ocultar">
+            <div class="barraMenu">
+                <a href="index.html"><img src="img/home/logo-small.png" alt="logo Rolling Stone" /></a>
+                <div class="barraMenu__menu">
+                    <a href="menu-hamburguesa.html">
+                        <h3><i class="fas fa-bars"></i>Menu</h3>
+                    </a>
+                    <a href="seccion-musica.html">
+                        <h3>Música</h3>
+                    </a>
+                    <h3>Cine/Tv</h3>
+                    <h3>Actualidad</h3>
+                    <h3>Life Style</h3>
+                </div>
+
+                <div class="barraMenu__sesion">
+                    <!--<h4>Iniciar sesión</h4>-->
+
+                    <button><a href="inicio-sesion.html">Iniciar sesion</a></button>
+                    <i class="fas fa-sort-down"></i>
+                </div>
+            </div>
+
+
+
+
+            <div class="reproductor">
+                <div class="reproductor__comandos">
+                    <img src="img/home/repro-random.png" alt="">
+                    <img src="img/home/repro-back.png" alt="">
+                    <button>
+                        <img id="play-icon" src="img/home/repro-play.png" alt="">
+                    </button>
+                    <img src="img/home/repro-next.png" alt="">
+                    <img src="img/home/repro-repeat.png" alt="">
+                </div>
+
+                <div class="reproductor__musica">
+
+                    <div class="reproductor__musica__lista">
+
+                        <div id="reproComprimido" class="reproductor__musica__lista__comprimido">
+                            <img src="img/home/repro-list.png" alt="">
+                            <h3 id="lista__elegida">Mis favoritos</h3>
+                        </div>
+
+
+                        <div id="reproDesplegado" class="reproductor__musica__lista__desplegado">
+                            <h3>Invisible</h3>
+                            <h3 value="1">Mi lista</h3>
+                            <h3>RS Favoritos</h3>
+                            <h3>Rock</h3>
+                            <h3>Grunge</h3>
+                            <h3>Rap</h3>
+                            <h3>Trap</h3>
+                        </div>
+                    </div>
+
+                    <div class="reproductor__musica__album">
+                        <img src="img/home/repro-album.png" alt="">
+                        <h3>Poets of the Falls</h3>
+                    </div>
+
+                    <div>
+                        <h3>Carnival of Rust</h3>
+                    </div>
+                </div>
+                <img class="reproductor__settings" src="img/home/repro-settings.png" alt="">
+                <div class="reproductor__info"></div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="portada" style="background-image: url(img/home/portada.png);">
+            <div class="portada__inicio">
+                <div class="portada__inicio-menu"><a href="menu-hamburguesa.html"><img src="img/home/burger.png"></a>
+                </div>
+                <div class="portada__inicio-logo"><a href="index.html"><img src="img/home/logo.png"></a></div>
+            </div>
+            <div class="portada__secciones">
+                <a href="seccion-musica.html"><img class="portada__seccion" src="img/home/musica.png"></a>
+                <img class="portada__seccion" src="img/home/actualidad.png">
+                <img class="portada__seccion" src="img/home/cine.png">
+                <img class="portada__seccion" src="img/home/lifestyle.png">
+            </div>
+            <div class="portada__titulo">
+                <div><a href="nota-larga.html">
+                        <h2>La vida según Bruno Mars</h2>
+                    </a></div>
+                <p>
+                    Buena onda por fuera, ansiedad por dentro: en el estudio con Bruno Mars mientras busca un groove
+                    másprofundo
+                </p>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="separador-1"></div>
+        </section>
+
+        <!-- Primera noticia y trending-->
+        <section class="contenedor">
+            <div class="seccion-1">
+                <div class="seccion-1__noticia">
+                    <h4>Las mujeres que resisten en el Paro Nacional</h4>
+                    <p>
+                        Las respuestas organizadas de las mujeres en el Paro Nacional son
+                        muestras de la participación activa y fundamental en la protesta
+                        social. Su apuesta es despatriarcalizar la protesta y crear espacios seguros para todas.
+                    </p>
+                </div>
+
+                <div class="seccion-1__trending">
+                    <h2>Trending</h2>
+                    <div class="seccion-1__trending__grid">
+                        <div>
+                            <h4>1</h4>
+                        </div>
+                        <div>
+                            <p>Las mujeres que resisten en el Paro Nacional</p>
+                        </div>
+                        <div>
+                            <h4>2</h4>
+                        </div>
+                        <div>
+                            <p>P&R: Dan Auerbach</p>
+                        </div>
+                        <div>
+                            <h4>3</h4>
+                        </div>
+                        <div>
+                            <p>P&R: Javiera Mena</p>
+                        </div>
+                        <div>
+                            <h4>4</h4>
+                        </div>
+                        <div>
+                            <p>Mark Hoppus revela que padece de cáncer</p>
+                        </div>
+                        <div>
+                            <h4>5</h4>
+                        </div>
+                        <div>
+                            <p>La inconveniente memoria de Héctor</p>
+                        </div>
+                    </div>
+                    <img src="img/home/trending-lines.png">
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Ultimas Noticias -->
+        <section class="contenedor UltimasNoticias">
+            <div class="separador__lineas">
+                <div class="separador__lineas-gruesa"></div>
+                <div class="separador__lineas-fina"></div>
+                <h2>Últimas noticias</h2>
+            </div>
+        </section>
+
+        <section class="contenedor UltimasNoticias">
+            <div class="cards">
+                <div class="card">
+                    <img class="card__img" src="img/home/destacadas3.jpg" alt="" />
+                    <div class="card__info">
+                        <p class="card__categoria">Música</p>
+                        <h3 class="card__titulo">La voz sigue brillando</h3>
+                        <p class="card__texto">
+                            El cantante de Los Fabulosos Cadillacs presenta un nuevo disco en
+                            solitario; han pasado ya cinco años desde La Salvación de Juan y
+                            Solo, junto a su lejendaria banda
+                        </p>
+                        <p class="card__autor">Por: Ricardo Durán</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card__img" src="img/home/destacadas2.jpg" alt="" />
+                    <div class="card__info">
+                        <p class="card__categoria">Música</p>
+                        <h3 class="card__titulo">Hombres de Dios: entre el cielo y el infierno</h3>
+                        <p class="card__texto">
+                            La nueva serie presentada por el canal regional Telecaribe, está protagonizada por
+                            sacerdotes, esta explora los conflictos de la fe
+                        </p>
+                        <p class="card__autor">Por: André Didyeme-Dôme</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card__img" src="img/home/destacadas.jpg" alt="" />
+
+                    <div class="card__info">
+                        <p class="card__categoria">Entrevistas</p>
+                        <h3 class="card__titulo">P&R: Dan Auerbach</h3>
+                        <p class="card__texto">
+                            El vocalista y guitarrista de los Black Keys habla sobre poder
+                            grabar con sus héroes del blues y extrañar a John Prine
+                        </p>
+                        <p class="card__autor">Por: Joseph Hudak</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Destacados y newsletter -->
+        <section class="destacados-newsletter">
+            <div class="contenedor">
+                <div class="destacados">
+                    <h2>Destacados</h2>
+                    <div class="destacados-imagenes">
+                        <div>
+                            <img id="destacados-img-1" src="img/home/destacados-artistas-nacionales.png"
+                                alt="Artistas nacionales">
+                            <h3>Artistas nacionales <br> que deberias conocer</h3>
+                        </div>
+                        <div>
+                            <img id="destacados-img-2" src="img/home/destacados-canciones-semana.png"
+                                alt="30 canciones de la semana">
+                            <h3 id="texto-badBunny">Las 30 canciones de la semana</h3>
+                        </div>
+                        <div>
+                            <img id="destacados-img-3" src="img/home/destacados-lollapalooza-bogota.png"
+                                alt="Lollapalooza Bogota">
+                            <h3>Lollapalooza <br>Bogotá</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h2>RS Newsletter</h2>
+                    <div class="input-newsletter">
+                        <input type="text" name="" value="" placeholder="Escribe tu email" id="caja-newsletter">
+                        <input type="submit" name="" value="Subscribite" id="boton-newsletter">
+                    </div>
+                    <img src="img/home/linea-destacados-newsletter.png" alt="">
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Seccion música -->
+        <section class="Musica ">
+
+            <div class="separador-rojo ">
+                <div class="contenedor">
+                    <div class="separador-rojo__item">
+                        <h2>Música</h2>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedor">
+                <!-- primer row musica-->
+                <div class="cards">
+                    <div class="card">
+                        <img class="card__img" src="img/home/musica 4.jpg" alt="" />
+                        <div class="card__info">
+                            <p class="card__categoria">Música</p>
+                            <h3 class="card__titulo">
+                                Lenny Kravitz presenta el video de Raise Vibration
+                            </h3>
+                            <p class="card__texto">
+                                "Queríamos celebrar la belleza de Las Bahamas en el video y tratar
+                                de capturar el espíritu de inspiración característico de las
+                                islas" dijo el músico.
+                            </p>
+                            <p class="card__autor">Por: Carlos Martínez</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card__img" src="img/home/destacadas3.jpg" alt="" />
+                        <div class="card__info">
+                            <p class="card__categoria">Música</p>
+                            <h3 class="card__titulo">La voz sigue brillando</h3>
+                            <p class="card__texto">
+                                El cantante de Los Fabulosos Cadillacs presenta un nuevo disco en
+                                solitario; han pasado ya cinco años desde La Salvación de Juan y
+                                Solo, junto a su lejendaria banda
+                            </p>
+                            <p class="card__autor">Por: Ricardo Durán</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card__img" src="img/home/destacadas.jpg" alt="" />
+
+                        <div class="card__info">
+                            <p class="card__categoria">Entrevistas</p>
+                            <h3 class="card__titulo">P&R: Dan Auerbach</h3>
+                            <p class="card__texto">
+                                El vocalista y guitarrista de los Black Keys habla sobre poder
+                                grabar con sus héroes del blues y extrañar a John Prine
+                            </p>
+                            <p class="card__autor">Por: Joseph Hudak</p>
+                        </div>
+                    </div>
+
+                    <!-- segundo row musica-->
+
+                    <div class="card">
+                        <img class="card__img" src="img/home/musica 2.jpg" alt="" />
+                        <div class="card__info">
+                            <p class="card__categoria">Música</p>
+                            <h3 class="card__titulo">
+                                Pom Pom Squad presenta Death of a Cheerleader, su álbum debut
+                            </h3>
+                            <p class="card__texto">
+                                El proyecto de Mia Berrin es una declaración del grunge moderno
+                            </p>
+                            <p class="card__autor">Por: Graciela González</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card__img" src="img/home/musica 1.jpg" alt="" />
+                        <div class="card__info">
+                            <p class="card__categoria">Música</p>
+                            <h3 class="card__titulo">
+                                Escucha You Right, la nueva colaboración entre Doja Cat y The
+                                Weeknd
+                            </h3>
+                            <p class="card__texto">
+                                La canción hace parte del tercer álbum de estudio de la rapera,
+                                Planet Her
+                            </p>
+                            <p class="card__autor">Por: Pablo Quintero</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card__img" src="img/home/musica 3.jpg" alt="" />
+
+                        <div class="card__info">
+                            <p class="card__categoria">Musica</p>
+                            <h3 class="card__titulo">
+                                Superlitio regresa junto a Fonseca en Perdóname, su nuevo sencillo
+                            </h3>
+                            <p class="card__texto">
+                                La banda colombiana presenta el primer adelanto de su décimo
+                                trabajo discográfico
+                            </p>
+                            <p class="card__autor">Por: Santiago Jaramillo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Seccion reseñas -->
+        <section class="reseñas">
+            <h2 class="reseñas__titulo contenedor">Reseñas</h2>
+
+            <div class="contenedor reseña__caja">
+                <div class="unaReseña">
+                    <img class="reseñas__img" src="img/home/resena 3.jpg" alt="" />
+                    <form>
+                        <p class="clasificacion">
+                            <label class="estrella-primera" for="radio1">★</label>
+                            <label for="radio2">★</label>
+                            <label for="radio3">★</label>
+                            <label for="radio4">★</label>
+                            <label class="estrella-blanca" for="radio5">★</label>
+                        </p>
+                    </form>
+                    <p class="reseñas__nombre">El pozo brillante</p>
+                    <p class="reseñas__autor">Vicentico</p>
+                </div>
+
+                <div class="unaReseña">
+                    <img class="reseñas__img" src="img/home/resena 2.jpg" alt="" />
+                    <form>
+                        <p class="clasificacion">
+                            <label class="estrella-primera" for="radio1">★</label>
+                            <label for="radio2">★</label>
+                            <label for="radio3">★</label>
+                            <label for="radio4">★</label>
+                            <label class="estrella-blanca" for="radio5">★</label>
+                        </p>
+                    </form>
+
+                    <p class="reseñas__nombre">No Gods No Masters</p>
+                    <p class="reseñas__autor">Garbage</p>
+                </div>
+
+                <div class="unaReseña">
+                    <img class="reseñas__img" src="img/home/resena 1.jpg" alt="" />
+                    <form>
+                        <p class="clasificacion">
+                            <label class="estrella-primera" for="radio1">★</label>
+                            <label for="radio2">★</label>
+                            <label for="radio3">★</label>
+                            <label class="estrella-blanca" for="radio4">★</label>
+                            <label class="estrella-blanca" for="radio5">★</label>
+                        </p>
+                    </form>
+
+                    <p class="reseñas__nombre">Jordi</p>
+                    <p class="reseñas__autor">Maroon 5</p>
+                </div>
+
+                <div class="unaReseña">
+                    <img class="reseñas__img" src="img/home/resena 4.jpg" alt="" />
+                    <form>
+                        <p class="clasificacion">
+                            <label class="estrella-primera" for="radio1">★</label>
+                            <label for="radio2">★</label>
+                            <label for="radio3">★</label>
+                            <label class="estrella-blanca" for="radio4">★</label>
+                            <label class="estrella-blanca" for="radio5">★</label>
+                        </p>
+                    </form>
+
+                    <p class="reseñas__nombre">Delta Kream</p>
+                    <p class="reseñas__autor">The Black Keys</p>
+                </div>
+
+            </div><!-- fin reseña contenedor -->
+        </section>
+
+
+
+
+
+        <!-- Seccion Cine y TV -->
+        <section class="CineYTV">
+            <div class="separador-rojo ">
+                <div class="contenedor">
+                    <div class="separador-rojo__item">
+                        <h2>Cine/Tv</h2>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedor">
+                <div class="cards">
+                    <div class="card ">
+                        <img class="card__img" src="img/home/destacadas.jpg" alt="" />
+                        <div class="card__info">
+                            <p class="card__categoria">Cine y TV</p>
+                            <h3 class="card__titulo">La inconveniente memoria de Héctor</h3>
+                            <p class="card__texto">
+                                El olvido que seremos es la primera película colombiana en ganar
+                                un premio Goya a mejor película extranjera
+                            </p>
+                            <p class="card__autor">Por: Rodrigo Torrijos</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card__img" src="img/home/destacadas2.jpg" alt="" />
+                        <div class="card__info">
+                            <p class="card__categoria">Cine y TV</p>
+                            <h3 class="card__titulo">Hombres de Dios: entre el cielo y el infierno</h3>
+                            <p class="card__texto">
+                                La nueva serie presentada por el canal regional Telecaribe, está protagonizada por
+                                sacerdotes, esta explora los conflictos de la fe
+                            </p>
+                            <p class="card__autor">Por: André Didyeme-Dôme</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card__img" src="img/home/cine 1.jpg" alt="" />
+
+                        <div class="card__info">
+                            <p class="card__categoria">Cine</p>
+                            <h3 class="card__titulo">
+                                Quentin Tarantino persiste en jubilarse tras la publicación de su
+                                próxima película
+                            </h3>
+                            <p class="card__texto">
+                                "Conozco la historia del cine y después de un tiempo los
+                                directores no tienden a mejorar", dijo el aclamado director
+                            </p>
+                            <p class="card__autor">Por: José Parra Osorio</p>
+                        </div>
+                    </div>
+
+                    <!-- segundo row -->
+
+                    <div class="card">
+                        <img class="card__img" src="img/home/cine 4.jpg" alt="" />
+                        <div class="card__info">
+                            <p class="card__categoria">Cine y TV</p>
+                            <h3 class="card__titulo">Luca</h3>
+                            <p class="card__texto">
+                                Lo que en apariencia puede parecer un trabajo menor de Pixar, se
+                                convierte en un nuevo milagro para los estudios
+                            </p>
+                            <p class="card__autor">Por: André Didyme-Dôme</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card__img" src="img/home/cine 3.jpg" alt="" />
+                        <div class="card__info">
+                            <p class="card__categoria">Cine y TV</p>
+                            <h3 class="card__titulo">Rápidos y furiosos 9</h3>
+                            <p class="card__texto">
+                                Toretto y su familia regresan más rápidos, más furiosos y más
+                                descerebrados que nunca
+                            </p>
+                            <p class="card__autor">Por: André Didyme-Dôme</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card__img" src="img/home/cine 2.jpg" alt="" />
+
+                        <div class="card__info">
+                            <p class="card__categoria">Cine y TV</p>
+                            <h3 class="card__titulo">Rick y Morty podría tener una película en el futuro</h3>
+                            <p class="card__texto">
+                                "Tendría que sentirse como el equivalente a una trilogía [porque]
+                                tenemos mucho que incluír. Tendría que ser bastante épica", dijo
+                                el productor de la serie, Scott Marder
+                            </p>
+                            <p class="card__autor">Por: María Álvarez</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- fin contenedor de cine y tv -->
+        </section>
+
+
+
+
+
+
+        <!-- Seccion reseñas Cine -->
+        <section class="reseñas ">
+            <h2 class="reseñas__titulo contenedor">Reseñas</h2>
+
+            <div class="reseña__caja-cine contenedor">
+
+                <div class="unaReseña-cine">
+                    <img src="img/home/resenaCine4.jpg" alt="" />
+                    <form>
+                        <p class="clasificacion">
+                            <label class="estrella-primera" for="radio1">★</label>
+                            <label for="radio2">★</label>
+                            <label for="radio3">★</label>
+                            <label for="radio4">★</label>
+                            <label class="estrella-blanca" for="radio5">★</label>
+                        </p>
+                    </form>
+                    <p class="reseñas__nombre">De Dioses y Hombres</p>
+                    <p class="reseñas__autor">Drama</p>
+                </div>
+
+                <div class="unaReseña-cine">
+                    <img src="img/home/resenaCine3.jpg" alt="" />
+                    <form>
+                        <p class="clasificacion">
+                            <label class="estrella-primera" for="radio1">★</label>
+                            <label for="radio2">★</label>
+                            <label class="estrella-blanca" for="radio3">★</label>
+                            <label class="estrella-blanca" for="radio4">★</label>
+                            <label class="estrella-blanca" for="radio5">★</label>
+                        </p>
+                    </form>
+                    <p class="reseñas__nombre">Rápidos y furiosos 9</p>
+                    <p class="reseñas__autor">Acción</p>
+                </div>
+
+                <div class="unaReseña-cine">
+                    <img src="img/home/resenaCine5.jpg" alt="" />
+                    <form>
+                        <p class="clasificacion">
+                            <label class="estrella-primera" for="radio1">★</label>
+                            <label for="radio2">★</label>
+                            <label for="radio3">★</label>
+                            <label for="radio4">★</label>
+                            <label for="radio5">★</label>
+                        </p>
+                    </form>
+
+                    <p class="reseñas__nombre">Los Conductos</p>
+                    <p class="reseñas__autor">Drama</p>
+                </div>
+
+                <div class="unaReseña-cine">
+                    <img src="img/home/resenaCine2.jpg" alt="" />
+                    <form>
+                        <p class="clasificacion">
+                            <label class="estrella-primera" for="radio1">★</label>
+                            <label for="radio2">★</label>
+                            <label for="radio3">★</label>
+                            <label for="radio4">★</label>
+                            <label class="estrella-blanca" for="radio5">★</label>
+                        </p>
+                    </form>
+
+                    <p class="reseñas__nombre">En el Barrio</p>
+                    <p class="reseñas__autor">Musical</p>
+                </div>
+
+                <div class="unaReseña-cine">
+                    <img src="img/home/resenaCine1.jpg" alt="" />
+                    <form>
+                        <p class="clasificacion">
+                            <label class="estrella-primera" for="radio1">★</label>
+                            <label for="radio2">★</label>
+                            <label class="estrella-blanca" for="radio3">★</label>
+                            <label class="estrella-blanca" for="radio4">★</label>
+                            <label class="estrella-blanca" for="radio5">★</label>
+                        </p>
+                    </form>
+
+                    <p class="reseñas__nombre">El protector</p>
+                    <p class="reseñas__autor">Acción</p>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <!-- Revista -->
+        <section class="revista ">
+            <div class="contenedor">
+
+                <!-- SubMenu de Revista-->
+                <div class="revista__subMenu">
+                    <div class="revista__subMenu__titulo" id="padding-bottom-2rem">
+                        <div></div><!-- Linea -->
+                        <h4>Revista</h4>
+                    </div>
+                    <p id="margin-bottom-2rem">Edición 71</p>
+                    <p id="margin-bottom-2rem">Edición 70</p>
+                    <p id="margin-bottom-2rem">Edición 69</p>
+                    <p id="margin-bottom-2rem">Edición 68</p>
+                    <p id="margin-bottom-2rem">Edición 67</p>
+                    <div class="revista__subMenu__unete" id="padding-bottom-2rem">
+                        <h5>Unete</h5>
+                    </div>
+                </div>
+
+                <div class="revista__flex">
+                    <div class="revista__flex__imagen">
+                        <img src="img/home/revista.png" alt="" />
+                    </div>
+                    <div class="revista__flex__texto">
+                        <h2>Juanes, abriendo camino hacia la posteridad </h2>
+                        <p>“Al final, sentí que esto era lo que tenía que hacer, lo que me ha gustado toda la vida, el
+                            rock”.
+                        </p>
+                        <form class="revista__flex__texto__botones">
+                            <button type="button">Leer</button>
+                            <button type="button">Ver más</button>
+                            <div class="revista__flex__texto__botones-linea"></div>
+                            <div class="revista__flex__texto__botones-linea"></div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- Footer v1-->
+        <footer>
+            <div class="footer-flex">
+                <div class="footer__seccion">
+                    <div><a href="seccion-musica.html">
+                            <h4>Música</h4>
+                        </a></div>
+                    <div><img src="img/footer/linea crema-2mm.png" /></div>
+                    <div>
+                        <h5>Noticias</h5>
+                    </div>
+                    <div>
+                        <h5>Listados</h5>
+                    </div>
+                    <div>
+                        <h5>Reseñas</h5>
+                    </div>
+                    <div>
+                        <h5>Entrevistas</h5>
+                    </div>
+                    <div><a href="seccion-musica-historia.html">
+                            <h5>Historias</h5>
+                        </a></div>
+                    <div>
+                        <h5>Festivales</h5>
+                    </div>
+                    <div>
+                        <h5>Galeria</h5>
+                    </div>
+                </div>
+                <div class="footer__seccion">
+                    <div>
+                        <h4>Cine/Tv</h4>
+                    </div>
+                    <div><img src="img/footer/linea crema-2mm.png" /></div>
+                    <div>
+                        <h5>Listados</h5>
+                    </div>
+                    <div>
+                        <h5>Noticias</h5>
+                    </div>
+                    <div>
+                        <h5>Reseñas</h5>
+                    </div>
+                    <div>
+                        <h5>Entrevistas</h5>
+                    </div>
+                    <div>
+                        <h5>Historias</h5>
+                    </div>
+                </div>
+                <div class="footer__seccion">
+                    <div>
+                        <h4>Actualidad</h4>
+                    </div>
+                    <div><img src="img/footer/linea crema-2mm.png" /></div>
+                    <div>
+                        <h5>Noticias</h5>
+                    </div>
+                    <div>
+                        <h5>Cultura</h5>
+                    </div>
+                    <div>
+                        <h5>Deportes</h5>
+                    </div>
+                    <div>
+                        <h5>Políticas</h5>
+                    </div>
+                    <div>
+                        <h5>Reportajes</h5>
+                    </div>
+                </div>
+                <div class="footer__seccion">
+                    <div>
+                        <h4>Life Style</h4>
+                    </div>
+                    <div><img src="img/footer/linea crema-2mm.png" /></div>
+                    <div>
+                        <h5>Fashion</h5>
+                    </div>
+                    <div>
+                        <h5>Eventos</h5>
+                    </div>
+                    <div>
+                        <h5>Experiencias</h5>
+                    </div>
+                    <div>
+                        <h5>Comida</h5>
+                    </div>
+                    <div>
+                        <h5>Tragos</h5>
+                    </div>
+                </div>
+                <div class="footer__seccion">
+                    <div>
+                        <h4>RS Premium</h4>
+                    </div>
+                    <div><img src="img/footer/linea crema-2mm.png" /></div>
+                    <div>
+                        <h5>Revista Digital</h5>
+                    </div>
+                    <div>
+                        <h5>Raw Sessions</h5>
+                    </div>
+                    <div>
+                        <h5>Entrevistas</h5>
+                    </div>
+                </div>
+                <div class="footer__seccion">
+                    <div>
+                        <h4>Rs Favoritos</h4>
+                    </div>
+                    <div><img src="img/footer/linea crema-2mm.png" /></div>
+                    <div>
+                        <h5>Artistas Nacionales</h5>
+                    </div>
+                    <div>
+                        <h5>Lo más escuchado</h5>
+                    </div>
+                    <div>
+                        <h5>Podcast</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__linea"><img src="img/footer/linea crema-4mm.png" /></div>
+            <div class="footer-flex">
+                <div class="footer__info">
+                    <h5>hola@rollingstone.co</h5>
+                </div>
+                <div class="footer__info">
+                    <h5></h5>
+                </div>
+                <div class="footer__info">
+                    <h5></h5>
+                </div>
+                <div class="footer__info">
+                    <h5>Privacidad</h5>
+                </div>
+                <div class="footer__info">
+                    <h5>Aviso Legal</h5>
+                </div>
+                <div class="footer__info">
+                    <h5>Tasty Media 2020</h5>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="js/action.js"></script>
+</body>
+
+</html>

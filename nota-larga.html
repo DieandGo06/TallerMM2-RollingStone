@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Nota larga</title>
+  <link type="text/css" rel="stylesheet" href="css/normalize.css">
+
+  <!-- CloudFlare Libreria -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+  <!-- icon libreria -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link type="text/css" rel="stylesheet" href="css/main.css">
+  <link type="text/css" rel="stylesheet" href="css/nota-larga.css">
+</head>
+
+<body>
+  <!-- Menu compacto -->
+  <header>
+    <nav id="menuHorizontal" class="ocultar">
+      <div class="barraMenu">
+          <a href="index.html"><img src="img/home/logo-small.png" alt="logo Rolling Stone" /></a>
+          <div class="barraMenu__menu">
+              <a href="menu-hamburguesa.html"><h3><i class="fas fa-bars"></i>Menu</h3></a>
+              <a href="seccion-musica.html"><h3>Música</h3></a>
+              <h3>Cine/Tv</h3>
+              <h3>Actualidad</h3>
+              <h3>Life Style</h3>
+          </div>
+
+          <div class="barraMenu__sesion">
+              <!--<h4>Iniciar sesión</h4>-->
+
+              <button><a href="inicio-sesion.html">Iniciar sesion</a></button>
+              <i class="fas fa-sort-down"></i>
+          </div>
+      </div>
+
+
+
+
+      <div class="reproductor">
+        <div class="reproductor__comandos">
+          <img src="img/home/repro-random.png" alt="">
+          <img src="img/home/repro-back.png" alt="">
+          <button>
+            <img id="play-icon" src="img/home/repro-play.png" alt="">
+          </button>
+          <img src="img/home/repro-next.png" alt="">
+          <img src="img/home/repro-repeat.png" alt="">
+        </div>
+
+        <div class="reproductor__musica">
+
+          <div class="reproductor__musica__lista">
+
+            <div id="reproComprimido"
+            class="reproductor__musica__lista__comprimido">
+            <img src="img/home/repro-list.png" alt="">
+            <h3 id="lista__elegida">Mis favoritos</h3>
+          </div>
+
+
+          <div id="reproDesplegado"
+          class="reproductor__musica__lista__desplegado">
+          <h3>Invisible</h3>
+          <h3 value="1">Mi lista</h3>
+          <h3>RS Favoritos</h3>
+          <h3>Rock</h3>
+          <h3>Grunge</h3>
+          <h3>Rap</h3>
+          <h3>Trap</h3>
+        </div>
+      </div>
+
+      <div class="reproductor__musica__album">
+        <img src="img/home/repro-album.png" alt="">
+        <h3>Poets of the Falls</h3>
+      </div>
+
+      <div class="reproductor__musica__artista">
+        <h3>Carnival of Rust</h3>
+      </div>
+    </div>
+    <img class="reproductor__settings" src="img/home/repro-settings.png" alt="">
+    <div class="reproductor__info"></div>
+  </div>
+</nav>
+</header>
+
+<!-- Navbar -->
+<section>
+  <div class="menu-nota">
+    <div class="menu-nota__logo"><a href="index.html"><img src="img/nota-larga/logo.png"></a></div>
+    <div class="menu-nota__burger">
+      <div><a href="menu-hamburguesa.html"><img src="img/nota-larga/burger.png"></a></div>
+      <div><a href="menu-hamburguesa.html"><h4>Menu</h4></a></div>
+    </div>
+    <div><a href="seccion-musica.html"><h4>Música</h4></a></div>
+    <div><h4>Cine/Tv</h4></div>
+    <div><h4>Actualidad</h4></div>
+    <div><h4>Life Style</h4></div>
+  </div>
+</section>
+
+
+<!-- Imagen inicial -->
+<div class="portada">
+  <img src="img/nota-larga/portada.png" />
+</div>
+
+
+<!-- Nota -->
+<div class="nota">
+  <div class="nota__linea-lateral"></div>
+  <div class="nota__linea-lateral"></div>
+  <div class="nota__texto-container">
+    <div><h4>Mark Seliger</h4></div> <!--Fotografo-->
+    <div class="nota__texto">
+      <div class="nota__texto__encabezado"><img src="img/nota-larga/estilo-fecha.png" /></div>
+      <div class="nota__texto__encabezado">
+        <div><h5>12 de junio 2021</h5></div>
+        <div><h5>Música > Entrevistas</h5></div>
+      </div>
+      <div><h1>La vida según<br>Bruno Mars</h1></div> <!--Titulo-->
+      <img style="width: 10.8rem; height: 0.3rem" src="img/nota-larga/linea-3mm.png" /> <!--Linea 1 parrafo-->
+      <div class="primer-parrafo">
+        <p>"¡He vivido en esta maldita caja durante meses!”. Estamos a finales de julio en Glenwood Place, un estudio de grabación en Burbank, California. Bruno Mars está en el patio —vestido con una camiseta blanca, una gorra Versace y mocasines deportivos blancos sin medias—, fumando su enésimo cigarrillo del día y tratando de terminar su tercer álbum.</p>
+      </div>
+      <div class="parrafo">
+        <p>“Ya casi está listo”, dice Mars de 31 años. “Tengo que terminar una canción, ajustar el puente de otra y prácticamente acabo. Quiero terminar a mediados del mes siguiente. Tengo un plazo. ¡Y esta mierda no es barata!”.</p>
+      </div>
+      <div class="parrafo">
+        <p>La canción que debe terminar la está trabajando con Skrillex. “Él es un genio sonoro, su versión es increíble”, dice Mars. “Simplemente hay algo con lo que estoy teniendo problemas. El groove no es correcto, o hay algo que no estamos haciendo en el coro –no sé exactamente qué sucede. Simplemente estoy tratando de averiguar por qué me estoy desconectando en algunas partes”.</p>
+      </div>
+      <div class="parrafo">
+        <p>La última vez que Mars lanzó un álbum fue en diciembre de 2012 —hace cuatro años; toda una eternidad para una estrella de pop—. Pero ha sabido sortear todo este tiempo como un profesional, con dos shows de medio tiempo en el Super Bowl (como artista principal en 2014 y haciendo apariciones con Coldplay y Beyoncé en febrero pasado), y con la canción más vendedora de los últimos años, Uptown Funk, su colaboración con Mark Ronson.</p>
+      </div>
+      <div class="parrafo">
+        <p>Pero ha pasado tanto tiempo desde la última vez que Mars hizo un álbum, que parece haber olvidado cómo funciona todo; las dudas, los ajustes; los reajustes; los cigarrillos. “En este momento hemos llegado al punto en donde estamos perdiendo la cabeza”, dice. “Mi ingeniero se está volviendo loco; me quiere matar. Este proceso es muy extraño. Sentarse en esta caja helada a tratar de inventar canciones”.</p>
+      </div>
+      <div class="nota__texto-foto">
+        <img src="img/nota-larga/foto-1.png" />
+      </div>
+      <div class="parrafo">
+        <p>Uptown Funk cimentó el estatus de superestrella de Mars, permaneciendo 14 semanas en el Número Uno –empatando el segundo número de semanas más largo de la historia– y ganando el premio Grammy por grabación del año. Hasta la fecha, ha vendido más de 12 millones de copias, se ha reproducido casi dos mil millones de veces y ha hecho que muchos amargados quieran retirarse. Perosi pensaba que el gran éxito de la canción reforzaría la confianza de Mars, él afirma todo lo contrario: “De hecho fue un poco abrumador”.</p>
+      </div>
+      <div class="parrafo">
+        <p>Por otro lado… estamos hablando de Bruno Mars. Seis sencillos en el Número Uno, treinta semanas combinadas encabezando los listados (44 contando Uptown). Dos álbumes, 26 millones de ventas a nivel mundial y cuatro Grammys hasta ahora. Así que cuando se le pregunta si usualmente tiene razón acerca de este tipo de cosas –si tiene buenos instintos para saber qué necesita una canción para volverse un hit– no puede evitar exigir reconocimiento. “No lo sé, dice Mars con una sonrisa. “Búscame en Google, ¿quieres?”.</p>
+      </div>
+      <div class="parrafo">
+        <p>Esa noche, Mars se queda en el estudio hasta tarde. Aproximadamente a las 3:00 a.m., se sube a su Cadillac 2010 (“Creo que es hora de cambiar de modelo. Parezco un conductor de Uber”) y maneja un trayecto de 20 minutos hasta su casa en Hollywood Hills. Su novia, la modelo Jessica Caban, ya lleva dormida un buen rato, así que Mars se estaciona solo en la entrada durante otra media hora para escuchar las mezclas de hoy una y otra vez.</p>
+      </div>
+      <div class="parrafo">
+        <p>Si Mars es obsesivo con la composición, probablemente es porque así comenzó cuando irrumpió en el negocio. Se mudó a Los Ángeles desde Hawái a los 18 años soñando convertirse en una estrella. (“Yo era ese chico. Pensaba que llegaría a Hollywood, cantaría para alguien y ya, luego estaría tocando en el Madison Square Garden”). Firmó brevemente con Motown Records, pero luego el contrató terminó. “Ahí fue cuando comenzó el ajetreo”, dice. Empezó a trabajar en el circuito de vendedores de canciones, escribiendo en conjunto y produciendo pistas para Brandy, las Sugababes y la nueva versión de Menudo.</p>
+      </div>
+      <div class="nota__texto__video">
+        <iframe width="725" height="424" src="https://www.youtube.com/embed/6mqhufiJFjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="parrafo">
+        <p>Uptown Funk cimentó el estatus de superestrella de Mars, permaneciendo 14 semanas en el Número Uno –empatando el segundo número de semanas más largo de la historia– y ganando el premio Grammy por grabación del año. Hasta la fecha, ha vendido más de 12 millones de copias, se ha reproducido casi dos mil millones de veces y ha hecho que muchos amargados quieran retirarse. Pero si pensaba que el gran éxito de la canción reforzaría la confianza de Mars, él afirma todo lo contrario: “De hecho fue un poco abrumador”.</p>
+      </div>
+      <div class="parrafo">
+        <p>Por otro lado… estamos hablando de Bruno Mars. Seis sencillos en el Número Uno, treinta semanas combinadas encabezando los listados (44 contando Uptown). Dos álbumes, 26 millones de ventas a nivel mundial y cuatro Grammys hasta ahora. Así que cuando se le pregunta si usualmente tiene razón acerca de este tipo de cosas –si tiene buenos instintos para saber qué necesita una canción para volverse un hit– no puede evitar exigir reconocimiento. “No lo sé, dice Mars con una sonrisa. “Búscame en Google, ¿quieres?”.</p>
+      </div>
+      <div class="parrafo">
+        <p>Esa noche, Mars se queda en el estudio hasta tarde. Aproximadamente a las 3:00 a.m., se sube a su Cadillac 2010 (“Creo que es hora de cambiar de modelo. Parezco un conductor de Uber”) y maneja un trayecto de 20 minutos hasta su casa en Hollywood Hills. Su novia, la modelo Jessica Caban, ya lleva dormida un buen rato, así que Mars se estaciona solo en la entrada durante otra media hora para escuchar las mezclas de hoy una y otra vez.</p>
+      </div>
+      <div class="parrafo">
+        <p>Algunos de sus mejores trabajos los hace estacionado en la entrada de su casa: “Hemos trabajado canciones hasta las 3 o 4 de la mañana, y hemos dicho, ‘¡Este va a ser el primer sencillo!’ –y tan pronto lo llevo al auto, es obvio que estábamos desvariando”, dice. “Algo pasa cuando uno baja la ventana y puede escuchar el tráfico y el verdadero ruido– esta es la forma en la que la gente va oír la música realmente”. En particular, los parlantes de su auto tienen algo especial. “Incluso si tengo un auto nuevo algún día, esta cosa va a estar estacionada al lado de la casa”, dice.</p>
+      </div>
+      <div class="nota__texto-foto">
+        <img src="img/nota-larga/foto-2.png" />
+      </div>
+      <div class="parrafo">
+        <p>Mars guarda esa versión en su portátil para recordar que es un proceso y que no hay que perder la cabeza. Uptown Funk prácticamente fue desechada varias veces. “Esa mierda estuvo en la caneca”, dice Mars. Toma su portátil y pone a sonar una primera versión desordenada que muestra un inexplicable corte de hard-rock y un coro en donde Mars grita “Burn this motherfucker down [Quemen a este hijo de puta]”. “Pasamos meses en ese coro”, dice. “Y un día dijimos: ‘Tal vez no tengamos coro’”.</p>
+      </div>
+      <div class="parrafo">
+        <p>Y algunas veces es solo una palabra lo que hace o daña a una canción. El año pasado Mars colaboró con Adele en una canción llamada All I ask para su nuevo álbum, 25. La terminaron en tan solo dos sesiones. Pero tuvieron problemas con una frase del segundo verso en donde Adele canta: “Take me by the hand while we do what lovers do [Tómame de la mano mientras hacemos lo que hacen los amantes]”.</p>
+      </div>
+      <div class="parrafo">
+        <p>“Queríamos hacer una balada típica de diva. dice Mars. “Pero, ‘¿amantes?’, no sé si alguien diga ‘amantes’. Yo sugerí cambiar esa palabra”.</p>
+      </div>
+      <div class="parrafo">
+        <p>“Pero Adele no dio su brazo a torcer”, dice. “Dijo, ‘No, así es que tiene que ser’. Y tenía razón. Esta estupenda palabra es la que hace que la canción sea grandiosa porque nadie la dice. Resalta porque nadie habla de esa manera. No es ‘lo que hacen los novios’ – se trata de ‘amantes’ que están un nivel superior. Algunas veces la toco en piano y no veo el momento de cantar esa parte. Es putamente perfecta”. La lección: “No trates de ser cool. Deja que sea lo que tiene que ser”. Al final, Mars se siente triste por la letra del unicornio. “Es una de las mierdas más maravillosas que he escrito”, dice. “ Pero la utilizaré algún día”, promete. “La oirás en el cuarto álbum”.</p>
+      </div>
+      <div class="nota__texto__cita">
+        <div class="nota__texto__cita-linea-1">
+          <img src="img/nota-larga/estilo-cita-1.png" />
+        </div>
+        <div class="nota__texto__cita-texto">
+          <h3>“A veces siento que estoy en el negocio de la música 10 años tarde, dice Mars. Ya nadie compra canciones. Y yo esto haciendo álbumes”.</h3>
+        </div>
+        <div class="nota__texto__cita-linea-2">
+          <img src="img/nota-larga/estilo-cita-2.png" />
+        </div>
+      </div>
+      <div class="parrafo">
+        <p>Seis semanas más tarde, Mars llega a almorzar a un restaurante italiano cerca de su casa. El álbum finalmente ha entrado en la etapa de mezcla, y él claramente se ve más relajado. También ayuda el hecho de que acaba de llegar del lago de Como, en Italia, donde se presentó en el matrimonio del fundador de Spotify, Daniel Ek. “Pero se supone que tú no deberías saber eso”, dice Mars sonriendo. (La noticia se filtró cuando un invitado publicó una foto en Instagram). Le pregunto si tendrá un posicionamiento privilegiado en la página de Spotify a cambio. “Me van a ayudar a promocionarlo”, dice con timidez. “Y me dieron un pequeño cheque”, sonríe Mars. “El lago de Como es hermoso”.</p>
+      </div>
+      <div class="parrafo">
+        <p>Aunque no recuerda el último matrimonio en el que tocó (cree que fue en China), lo hace con más frecuencia de lo que uno se imagina. “He tocado en matrimonios desde que tenía ocho años, es volver a lo básico. De hecho, dice que él y su banda, los Hooligans, tocaron la noche anterior en una fiesta de cumpleaños. “En una casa impresionante en Malibú”, dice. “No había nadie menor de 50 años. Miré a mi banda y te juro que me puse sentimental. ¡Todos sudaban como si estuviéramos en el Madison Square Garden!</p>
+      </div>
+      <div class="nota__texto__video">
+        <iframe width="725" height="424" src="https://www.youtube.com/embed/sonzlE32YVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="parrafo">
+        <p>En este punto recuerda una discusión sobre la transmisión de su primer espectáculo del Super Bowl. “Querían mostrar una toma de la audiencia con unas pulseras luminosas”, dice. “Les dije: ‘Si me quitan la cámara de encima, se estarán perjudicando’. ¿Y qué pasó? Gastaron todo ese dinero en estas cosas y no funcionó”. Naturalmente, él estaba preparado para ese percance. “Yo me he sacado la mierda ensayando con mi banda, así que incluso si nos iluminan con luces de cafetería, todavía nos vamos a ver como si tuviéramos 5 millones de dólares en producción”, dice. Crecí con la actitud de bandas de bar, las luces y los láser son solo un elemento extra”.</p>
+      </div>
+      <div class="parrafo">
+        <p>Sorprendentemente, cuando Chris Martin llamó a Mars para preguntarle si quería presentarse con Coldplay en el entretiempo de 2016, este desistió. “Le dije que no”, dice Mars. “Sentía que lo acababa de hacer”. Martin insistió, le pidió a Mars que pasara por el estudio de Malibú donde se encontraba trabajando. “Manejé hasta allí y me hizo la propuesta”, dice Mars. ‘Quiero que tú y Beyoncé hagan Uptown Funk. Quiero darle este regalo al mundo’.</p>
+      </div>
+      <div class="parrafo">
+        <p>Mars todavía dudaba. “Tienes que tener cuidado con esas actuaciones [varios artistas]”, dice. “Lo hacen mucho en programas de premios, donde tienes muchos cameos, pero nada sólido”. Le dijo a Martin que hablara con Beyoncé para ver qué pensaba. La respuesta de Martin fue: “¡Vamos a hablar con ella ahora mismo!”. Tomó su teléfono, grabó un video rápido de los dos y se lo envió por mensaje de texto a Beyoncé. Para sorpresa de Mars, ella accedió.</p>
+      </div>
+      <div class="parrafo">
+        <p>Mars dice que aprendió viendo a Beyoncé prepararse. “Ella no se toma esto como una puta broma”, dice. “Se sube al escenario todas las veces y le demuestra a todo el mundo por qué es la mejor. Tiene un monstruo adentro”. Pero la siguiente anécdota es la más notable. “Beyoncé y yo estábamos cuidando nuestras dietas, estábamos estresados”, dice. “Entonces el día anterior, estábamos viendo la reproducción tras bastidores y ella se estaba comiendo una bolsa de Cheetos. Y le dije, ‘¿Qué estás haciendo?’.</p>
+      </div>
+      <div class="parrafo">
+        <p>Luego hace la mínima de Beyoncé comiéndose un Cheeto. “Y ella me dijo, ‘No hay nada más que podamos hacer durante estos últimos dos días. Va a ser lo que va a ser, así que voy a disfrutar esta bolsa se Cheetos’.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Autor -->
+  <div class="nota__linea-lateral-autor"></div>
+  <div class="nota__autor">
+    <div class="nota__imagen-lateral-autor">
+      <img src="img/nota-larga/autor-img.png" alt="Foto de Josh Ells">
+    </div>
+    <div>
+      <h2>Por Josh <br> Eells</h2>
+      <img src="img/nota-larga/linea-roja-autor.png" id="linea-roja-autor">
+    </div>
+    <img src="img/nota-larga/redes-sociales.png" alt="Compartir en redes sociales" id="compartir-redes-sociales">
+  </div>
+</div>
+
+<!--Comentarios-->
+<div class="comentarios">
+  <div class="comentarios__linea-gruesa"></div>
+  <div><h3>Comentarios</h3></div>
+  <form>
+    <div class="input-comentario">
+    <input id="comentario__usuario" type="text" name="comentario" autocomplete="off" placeholder="¿Qué opinas vos?" onfocus="this.placeholder=''" onblur="this.placeholder='¿Qué opinas vos?'">
+    <input id="comentario__enviar" type="submit" value="Publicar">
+    </div>
+  </form>
+
+  <div class="comentarios__numero">
+    <h4>3 Comentarios</h4>
+    <div class="linea"></div>
+  </div>
+  <div class="comentarios__publicado">
+    <div class="comentarios__publicado-linea"></div>
+    <div class="comentarios__publicado__info">
+      <h4>Rodrigo Campero</h4>
+      <p>Hace 31 minutos</p>
+    </div>
+    <div><p>Que ejemplo de vida.</p></div>
+    <div class="comentarios__publicado__acciones">
+      <h4>Responder</h4>
+      <div class="comentarios__publicado__acciones-like"><img src="img/main/like.png"></div>
+      <p>14</p>
+      <div class="comentarios__publicado__acciones-dislike"><img src="img/main/dislike.png"></div>
+    </div>
+  </div>
+  <div class="comentarios__publicado">
+    <div class="comentarios__publicado-linea"></div>
+    <div class="comentarios__publicado__info">
+      <h4>Arnaldo Saladillo</h4>
+      <p>Hace 5 horas</p>
+    </div>
+    <div><p>Impresionante! no lo conocía como artista, pero sin dudas es una gran persona</p></div>
+    <div class="comentarios__publicado__acciones">
+      <h4>Responder</h4>
+      <div class="comentarios__publicado__acciones-like"><img src="img/main/like.png"></div>
+      <p>4</p>
+      <div class="comentarios__publicado__acciones-dislike"><img src="img/main/dislike.png"></div>
+    </div>
+  </div>
+  <div class="comentarios__publicado">
+    <div class="comentarios__publicado-linea"></div>
+    <div class="comentarios__publicado__info">
+      <h4>María Gines</h4>
+      <p>Hace 2 días</p>
+    </div>
+    <div><p>Grande Bruno!!! con tus palabras pude acercarme a tu persona, sos un genio!</p></div>
+    <div class="comentarios__publicado__acciones">
+      <h4>Responder</h4>
+      <div class="comentarios__publicado__acciones-like"><img src="img/main/like.png"></div>
+      <p>2</p>
+      <div class="comentarios__publicado__acciones-dislike"><img src="img/main/dislike.png"></div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+<!-- Cards Noticias Relacionadas -->
+<section class="noticias__relacionadas">
+
+  <!-- Noticias Relacionadas -->
+  <section class="contenedor UltimasNoticias">
+    <div class="separador__lineas">
+      <div class="separador__lineas-gruesa"></div>
+      <div class="separador__lineas-fina"></div>
+      <h2>Noticias Relacionadas</h2>
+    </div>
+  </section>
+
+  <div class="contenedor">
+    <!-- primer row musica-->
+    <div class="cards">
+      <div class="card">
+        <img class="card__img" src="img/home/musica 4.jpg" alt="" />
+        <div class="card__info">
+          <p class="card__categoria">Música</p>
+          <h3 class="card__titulo">
+            Lenny Kravitz presenta el video de Raise Vibration
+          </h3>
+          <p class="card__texto">
+            "Queríamos celebrar la belleza de Las Bahamas en el video y tratar
+            de capturar el espíritu de inspiración característico de las
+            islas" dijo el músico.
+          </p>
+          <p class="card__autor">Por: Carlos Martínez </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card__img" src="img/home/destacadas3.jpg" alt="" />
+        <div class="card__info">
+          <p class="card__categoria">Música</p>
+          <h3 class="card__titulo">La voz sigue brillando</h3>
+          <p class="card__texto">
+            El cantante de Los Fabulosos Cadillacs presenta un nuevo disco en
+            solitario; han pasado ya cinco años desde La Salvación de Juan y
+            Solo, junto a su lejendaria banda
+          </p>
+          <p class="card__autor">Por: Ricardo Durán</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card__img" src="img/home/destacadas.jpg" alt="" />
+
+        <div class="card__info">
+          <p class="card__categoria">Entrevistas</p>
+          <h3 class="card__titulo">P&R: Dan Auerbach</h3>
+          <p class="card__texto">
+            El vocalista y guitarrista de los Black Keys habla sobre poder
+            grabar con sus héroes del blues y extrañar a John Prine
+          </p>
+          <p class="card__autor">Por: Joseph Hudak</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer v1-->
+<footer>
+  <div class="footer-flex">
+    <div class="footer__seccion">
+      <div><a href="seccion-musica.html"><h4>Música</h4></a></div>
+      <div><img src="img/footer/linea crema-2mm.png" /></div>
+      <div><h5>Noticias</h5></div>
+      <div><h5>Listados</h5></div>
+      <div><h5>Reseñas</h5></div>
+      <div><h5>Entrevistas</h5></div>
+      <div><a href="seccion-musica-historia.html"><h5>Historias</h5></a></div>
+      <div><h5>Festivales</h5></div>
+      <div><h5>Galeria</h5></div>
+    </div>
+    <div class="footer__seccion">
+      <div><h4>Cine/Tv</h4></div>
+      <div><img src="img/footer/linea crema-2mm.png" /></div>
+      <div><h5>Listados</h5></div>
+      <div><h5>Noticias</h5></div>
+      <div><h5>Reseñas</h5></div>
+      <div><h5>Entrevistas</h5></div>
+      <div><h5>Historias</h5></div>
+    </div>
+    <div class="footer__seccion">
+      <div><h4>Actualidad</h4></div>
+      <div><img src="img/footer/linea crema-2mm.png" /></div>
+      <div><h5>Noticias</h5></div>
+      <div><h5>Cultura</h5></div>
+      <div><h5>Deportes</h5></div>
+      <div><h5>Políticas</h5></div>
+      <div><h5>Reportajes</h5></div>
+    </div>
+    <div class="footer__seccion">
+      <div><h4>Life Style</h4></div>
+      <div><img src="img/footer/linea crema-2mm.png" /></div>
+      <div><h5>Fashion</h5></div>
+      <div><h5>Eventos</h5></div>
+      <div><h5>Experiencias</h5></div>
+      <div><h5>Comida</h5></div>
+      <div><h5>Tragos</h5></div>
+    </div>
+    <div class="footer__seccion">
+      <div><h4>RS Premium</h4></div>
+      <div><img src="img/footer/linea crema-2mm.png" /></div>
+      <div><h5>Revista Digital</h5></div>
+      <div><h5>Raw Sessions</h5></div>
+      <div><h5>Entrevistas</h5></div>
+    </div>
+    <div class="footer__seccion">
+      <div><h4>Rs Favoritos</h4></div>
+      <div><img src="img/footer/linea crema-2mm.png" /></div>
+      <div><h5>Artistas Nacionales</h5></div>
+      <div><h5>Lo más escuchado</h5></div>
+      <div><h5>Podcast</h5></div>
+    </div>
+  </div>
+
+  <div class="footer__linea"><img src="img/footer/linea crema-4mm.png" /></div>
+  <div class="footer-flex">
+    <div class="footer__info"><h5>hola@rollingstone.co</h5></div>
+    <div class="footer__info"><h5></h5></div>
+    <div class="footer__info"><h5></h5></div>
+    <div class="footer__info"><h5>Privacidad</h5></div>
+    <div class="footer__info"><h5>Aviso Legal</h5></div>
+    <div class="footer__info"><h5>Tasty Media 2020</h5></div>
+  </div>
+</footer>
+
+<script src="js/action.js"></script>
+</body>
+</html>
